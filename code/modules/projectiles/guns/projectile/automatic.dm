@@ -282,3 +282,38 @@
 		to_chat(user, "<span class='warning'>You need to open the cover to unload [src].</span>")
 		return
 	..()
+
+/obj/item/weapon/gun/projectile/automatic/wwi_mg
+	name = "\improper MG 08-15"
+	desc = "A lightened and thus more portable version of the original german MG 08 heavy machinegun. Supports 50-round drum feed system. Uses 7.92mm ammo."
+	icon_state = "mg08"
+	item_state = "mg08_w"
+	caliber = "7.92mm"
+	origin_tech = "combat=5;materials=2"
+	slot_flags = 0
+	ammo_type = "/obj/item/ammo_casing/a792"
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/a792
+	icon = 'icons/FoF/weaponsnew.dmi'
+	firemodes = list(
+		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		)
+	item_icons = list(
+		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/FoF/righthand_guns.dmi',
+		)
+	w_class = ITEM_SIZE_HUGE
+	max_shells = 50
+
+/obj/item/weapon/gun/projectile/automatic/wwi_mg/update_icon()
+	..()
+	if(ammo_magazine)
+		if(ammo_magazine.stored_ammo.len)
+			icon_state = "mg08"
+		else
+			icon_state = "mg08_empty"
+	else
+		icon_state = "mg08"
+	return

@@ -78,6 +78,16 @@
 	projectile_type = /obj/item/projectile/bullet/shotgun
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 
+/obj/item/ammo_casing/shotgun/trench
+	name = "shotgun shell"
+	desc = "A dirty shotgun shell."
+	icon_state = "shotgunshell"
+	icon = 'icons/FoF/munitions.dmi'
+	spent_icon = "spent_shotgunshell"
+	projectile_type = /obj/item/projectile/bullet/pellet/shotgun
+	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	caliber = "shotgun"
+
 /obj/item/ammo_casing/shotgun/pellet
 	name = "shotgun shell"
 	desc = "A 12 gauge shell."
@@ -204,3 +214,10 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(DEFAULT_WALL_MATERIAL = 260, "uranium" = 200)
+
+/obj/item/ammo_casing/a792
+	desc = "A 7.92mm bullet casing."
+	caliber = "a792"
+	projectile_type = /obj/item/projectile/bullet/rifle/a792
+	icon_state = "looseriflerounds_1"
+	spent_icon = "rifle-casing-spent"

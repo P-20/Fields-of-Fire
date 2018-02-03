@@ -10,6 +10,7 @@
 #define DEBUG
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include "testmap.dmm"
 #include "code\_macros.dm"
 #include "code\client_macros.dm"
 #include "code\hub.dm"
@@ -2573,8 +2574,19 @@
 #include "maps\crashsite_zeta\crashsite_zeta_map.dm"
 #include "maps\desert_outpost\__desert_outpost_map.dm"
 #include "maps\example\example_define.dm"
+#include "maps\geminus_city\areas.dm"
+#include "maps\geminus_city\citymapturfs.dm"
+#include "maps\geminus_city\cityprops.dm"
+#include "maps\geminus_city\geminus_city.dm"
+#include "maps\geminus_city\geminus_city_jobs.dm"
 #include "maps\geminus_city\geminus_city_map.dm"
+#include "maps\geminus_city\geminus_city_outfits.dm"
 #include "maps\geminus_city\geminus_city_overmap.dm"
+#include "maps\geminus_city\geminus_city_spawns.dm"
+#include "maps\geminus_city\interiorobjs.dm"
+#include "maps\geminus_city\interiorstructures.dm"
+#include "maps\geminus_city\signs.dm"
+#include "maps\geminus_city\streetobjs.dm"
 #include "maps\geminus_city\unit_tests.dm"
 #include "maps\insurrection\innie_base_map.dm"
 #include "maps\insurrection\innie_base_overmap.dm"

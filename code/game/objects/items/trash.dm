@@ -76,5 +76,20 @@
 	name = "bread tube"
 	icon_state = "tastybread"
 
+/obj/item/trash/cansoup
+	name = "empty can"
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "soup_e"
+
+/obj/item/trash/canbean
+	name = "empty can"
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "beans_e"
+
+/obj/item/trash/canfish
+	name = "empty can"
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "fish_e"
+
 /obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
 	return

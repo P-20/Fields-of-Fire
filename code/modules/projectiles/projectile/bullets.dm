@@ -179,6 +179,10 @@
 	armor_penetration = 20
 	penetrating = 1
 
+/obj/item/projectile/bullet/rifle/a792
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 25
+
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 25

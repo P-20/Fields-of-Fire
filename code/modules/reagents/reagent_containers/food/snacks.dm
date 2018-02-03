@@ -3269,6 +3269,28 @@
 		reagents.add_reagent(/datum/reagent/iron, 3)
 		bitesize = 4
 
+/obj/item/weapon/reagent_containers/food/snacks/cansoup
+	name = "\improper Ration Soup"
+	desc = "A can of sour soup meant to last months in the trenches."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "soup"
+	trash = /obj/item/trash/cansoup
+
+/obj/item/weapon/reagent_containers/food/snacks/canbeans
+	name = "\improper Ration Soup"
+	desc = "A can of bland beans meant to last months in the trenches."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "beans"
+	trash = /obj/item/trash/canbean
+
+/obj/item/weapon/reagent_containers/food/snacks/canfish
+	name = "\improper Ration Soup"
+	desc = "A can of reeking fish meant to last months in the trenches."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "fish"
+	trash = /obj/item/trash/canfish
+
+
 
 /obj/item/weapon/reagent_containers/food/snacks/tastybread
 	name = "bread tube"

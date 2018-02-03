@@ -59,6 +59,16 @@
 /obj/item/ammo_box/shotgun/update_icon()
 	desc = "[initial(desc)] It has [contents.len] shells left."
 
+/obj/item/ammo_box/shotgun/trench
+	name = "Shotgun Shell Box"
+	desc = "A small box of shotgun shells to help load a shotgun."
+	capacity = 6
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "papcase"
+	w_class = ITEM_SIZE_NORMAL
+	ammo_spawnwith = list(/obj/item/ammo_casing/shotgun/trench)
+	load_time = 2
+
 /obj/item/ammo_box/shotgun/slug
 	name = "Shotgun Slug Box"
 	desc = "A box of slugs to assist in loading pump-action shotguns"
