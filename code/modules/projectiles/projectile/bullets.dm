@@ -129,6 +129,14 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
 	damage = 20
 
+/obj/item/projectile/bullet/pistol/c32acp
+	fire_sound = 'sound/weapons/ruby.ogg'
+	damage = 20
+
+/obj/item/projectile/bullet/pistol/c9mm
+	fire_sound = 'sound/weapons/ruby.ogg'
+	damage = 20
+
 /obj/item/projectile/bullet/pistol/medium
 	damage = 25
 
@@ -182,6 +190,14 @@
 /obj/item/projectile/bullet/rifle/a792
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	damage = 25
+
+/obj/item/projectile/bullet/rifle/a303
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 25
+
+/obj/item/projectile/bullet/rifle/c8mm
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 35
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'

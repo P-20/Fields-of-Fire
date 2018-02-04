@@ -11,6 +11,26 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
+/obj/item/weapon/melee/combat_knife/german
+	icon = 'icons/FoF/weaponsnew.dmi'
+	name = "\improper German Trench Knife"
+	desc = "A rusty trench knife."
+	icon_state = "knife_german"
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/melee/combat_knife/british
+	icon = 'icons/FoF/weaponsnew.dmi'
+	name = "\improper British Trench Knife"
+	desc = "A rusty trench knife."
+	icon_state = "knife_british"
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/melee/combat_knife/french
+	icon = 'icons/FoF/weaponsnew.dmi'
+	name = "\improper French Trench Knife"
+	desc = "A rusty trench knife."
+	icon_state = "knife_french"
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/melee/baton/humbler
 	name = "humbler stun device"

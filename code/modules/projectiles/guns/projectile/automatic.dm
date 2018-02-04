@@ -283,14 +283,15 @@
 		return
 	..()
 
-/obj/item/weapon/gun/projectile/wwi_mg08
+/obj/item/weapon/gun/projectile/wwi
+	icon = 'icons/FoF/weaponsnew.dmi'
+
+/obj/item/weapon/gun/projectile/wwi/mg08
 	name = "\improper MG 08-15"
 	desc = "A lightened and thus more portable version of the original german MG 08 heavy machinegun. Supports 50-round drum feed system. Uses 7.92mm ammo."
 	icon_state = "mg08"
 	item_state = "mg08_w"
-	icon = 'icons/FoF/weaponsnew.dmi'
 	caliber = "a792"
-	origin_tech = "combat=5;materials=2"
 	slot_flags = 0
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	load_method = MAGAZINE
@@ -310,10 +311,113 @@
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 50
 
-/obj/item/weapon/gun/projectile/wwi_mg08/update_icon()
+/obj/item/weapon/gun/projectile/wwi/mg08/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "mg08"
 	else
 		icon_state = "mg08_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/lewis
+	name = "\improper Lewis gun"
+	desc = "A British light machine gun, known by its distinctive barrel cooling shroud and top mounted 47-round pan magazine. Uses .303 British ammo."
+	icon_state = "lewis"
+	item_state = "mg08_w"
+	caliber = "a303"
+	ammo_type = /obj/item/ammo_casing/a303
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	magazine_type = /obj/item/ammo_magazine/box/mp303
+	one_hand_penalty = 6
+	slot_flags = 0
+	burst = 5
+	load_method = MAGAZINE
+	firemodes = list(
+		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		)
+	item_icons = list(
+		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/FoF/righthand_guns.dmi',
+		)
+	w_class = ITEM_SIZE_HUGE
+	max_shells = 47
+
+/obj/item/weapon/gun/projectile/wwi/lewis/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "lewis"
+	else
+		icon_state = "lewis_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/chauchat
+	name = "\improper FM Chauchat"
+	desc = "A french light machine gun, known for overheating and frequent failures. Supports 20-round magazine feed system. Uses 8mm ammo."
+	icon_state = "chauchat"
+	item_state = "chauchat"
+	caliber = "8mm"
+	ammo_type = /obj/item/ammo_casing/c8mm
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	magazine_type = /obj/item/ammo_magazine/box/c8mm
+	one_hand_penalty = 6
+	slot_flags = 0
+	burst = 5
+	load_method = MAGAZINE
+	firemodes = list(
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		)
+	item_icons = list(
+		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/FoF/righthand_guns.dmi',
+		)
+	w_class = ITEM_SIZE_HUGE
+	max_shells = 20
+/obj/item/weapon/gun/projectile/wwi/chauchat/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "chauchat"
+	else
+		icon_state = "chauchat_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/ruby
+	name = "\improper Ruby"
+	desc = "A cheap Spanish pistol, favoured by the French army for its portability and decent firepower. Uses .32 ACP."
+	magazine_type = /obj/item/ammo_magazine/c32acp
+	ammo_type = /obj/item/ammo_casing/c32acp
+	icon_state = "ruby"
+	caliber = ".32"
+	fire_sound = 'sound/weapons/ruby.ogg'
+	load_method = MAGAZINE
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+
+/obj/item/weapon/gun/projectile/wwi/ruby/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ruby"
+	else
+		icon_state = "ruby_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/mauser
+	name = "\improper Mauser C96"
+	desc = "A Mauser, expensive yet reliable german pistol."
+	magazine_type = /obj/item/ammo_magazine/c9mm
+	fire_sound = 'sound/weapons/ruby.ogg'
+	icon_state = "c96"
+	caliber = "9mm"
+	max_shells = 10
+	ammo_type = /obj/item/ammo_casing/c9mm
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+
+/obj/item/weapon/gun/projectile/wwi/mauser/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "c96"
+	else
+		icon_state = "c96_empty"
 	return

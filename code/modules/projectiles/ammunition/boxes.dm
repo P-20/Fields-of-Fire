@@ -10,20 +10,6 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/box/a792
-	name = "7.92mm box magazine"
-	icon = 'icons/FoF/munitions.dmi'
-	icon_state = "mg08mag"
-	mag_type = MAGAZINE
-	caliber = "a792"
-	matter = list(DEFAULT_WALL_MATERIAL = 7500)
-	ammo_type = /obj/item/ammo_casing/a792
-	max_ammo = 50
-	multiple_sprites = 1
-
-/obj/item/ammo_magazine/box/a792/empty
-	initial_ammo = 0
-
 /obj/item/ammo_magazine/c38
 	name = "speed loader (.38)"
 	icon_state = "38"
@@ -246,4 +232,80 @@
 	ammo_type = /obj/item/ammo_casing/cap
 	matter = list(DEFAULT_WALL_MATERIAL = 600)
 	max_ammo = 7
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/a792
+	name = "7.92mm box magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "mg08mag"
+	mag_type = MAGAZINE
+	caliber = "a792"
+	matter = list(DEFAULT_WALL_MATERIAL = 7500)
+	ammo_type = /obj/item/ammo_casing/a792
+	max_ammo = 50
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/a792/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/box/mp303
+	name = ".303 British drum magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "lewismag"
+	mag_type = MAGAZINE
+	caliber = "a303"
+	matter = list(DEFAULT_WALL_MATERIAL = 7500)
+	ammo_type = /obj/item/ammo_casing/a303
+	max_ammo = 47
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/mp303/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/box/c8mm
+	name = "8mm box magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "chauchatmag"
+	mag_type = MAGAZINE
+	caliber = "8mm"
+	matter = list(DEFAULT_WALL_MATERIAL = 7500)
+	ammo_type = /obj/item/ammo_casing/c8mm
+	max_ammo = 20
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/c8mm/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/c32acp
+	name = ".32 ACP magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "rubymag"
+	mag_type = MAGAZINE
+	caliber = ".32"
+	max_ammo = 9
+	matter = list(DEFAULT_WALL_MATERIAL = 540)
+	ammo_type = /obj/item/ammo_casing/c32acp
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c32acp/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/c9mm
+	name = "9mm stripper clip"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "c96clip"
+	caliber = "9mm"
+	max_ammo = 10
+	matter = list(DEFAULT_WALL_MATERIAL = 600)
+	ammo_type = /obj/item/ammo_casing/c9mm
+	multiple_sprites = 1
+
+obj/item/ammo_magazine/c9mm/empty
+	initial_ammo = 0
+
+obj/item/ammo_magazine/c9mm/handful
+	name = "handful of 9mm casings"
+	icon_state = "pbullet_1"
+	max_ammo = 6
+	ammo_type = /obj/item/ammo_casing/c9mm
 	multiple_sprites = 1

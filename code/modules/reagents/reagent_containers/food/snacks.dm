@@ -3274,23 +3274,55 @@
 	desc = "A can of sour soup meant to last months in the trenches."
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "soup"
+	throwforce = 10
 	trash = /obj/item/trash/cansoup
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("sourness" = 2,"stale soup" = 2)
+	nutriment_amt = 20
+	throw_range = 5
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 2)
+		reagents.add_reagent(/datum/reagent/dylovene, 5)
+		reagents.add_reagent(/datum/reagent/nutriment, 4)
+		bitesize = 5
 
 /obj/item/weapon/reagent_containers/food/snacks/canbeans
-	name = "\improper Ration Soup"
+	name = "\improper Ration Beans"
 	desc = "A can of bland beans meant to last months in the trenches."
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "beans"
+	throwforce = 10
 	trash = /obj/item/trash/canbean
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("dirt" = 2,"stale beans" = 2)
+	nutriment_amt = 20
+	throw_range = 5
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 5)
+		reagents.add_reagent(/datum/reagent/nutriment, 3)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
+		bitesize = 5
 
 /obj/item/weapon/reagent_containers/food/snacks/canfish
-	name = "\improper Ration Soup"
+	name = "\improper Ration Fish"
 	desc = "A can of reeking fish meant to last months in the trenches."
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "fish"
+	throwforce = 10
 	trash = /obj/item/trash/canfish
-
-
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("rotten mush" = 2,"fish" = 2)
+	nutriment_amt = 20
+	throw_range = 7
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 4)
+		reagents.add_reagent(/datum/reagent/inaprovaline, 4)
+		reagents.add_reagent(/datum/reagent/nutriment, 5)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
+		bitesize = 5
 
 /obj/item/weapon/reagent_containers/food/snacks/tastybread
 	name = "bread tube"
