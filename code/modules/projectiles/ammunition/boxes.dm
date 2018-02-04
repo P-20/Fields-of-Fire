@@ -10,15 +10,19 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/a792
+/obj/item/ammo_magazine/box/a792
 	name = "7.92mm box magazine"
 	icon = 'icons/FoF/munitions.dmi'
 	icon_state = "mg08mag"
-	caliber = "7.92mm"
-	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	mag_type = MAGAZINE
+	caliber = "a792"
+	matter = list(DEFAULT_WALL_MATERIAL = 7500)
 	ammo_type = /obj/item/ammo_casing/a792
 	max_ammo = 50
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/a792/empty
+	initial_ammo = 0
 
 /obj/item/ammo_magazine/c38
 	name = "speed loader (.38)"

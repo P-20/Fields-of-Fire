@@ -219,5 +219,7 @@
 	desc = "A 7.92mm bullet casing."
 	caliber = "a792"
 	projectile_type = /obj/item/projectile/bullet/rifle/a792
+	icon = 'icons/FoF/munitions.dmi'
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
+	matter = list(DEFAULT_WALL_MATERIAL = 150)
