@@ -285,6 +285,9 @@
 
 /obj/item/weapon/gun/projectile/wwi
 	icon = 'icons/FoF/weaponsnew.dmi'
+	force = 10
+	jam_chance = 5
+	attack_verb = list("beaten","clubbed","muzzle fucked","freedom rocked","stock bumped","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
 
 /obj/item/weapon/gun/projectile/wwi/mg08
 	name = "\improper MG 08-15"
@@ -301,8 +304,8 @@
 	one_hand_penalty = 6
 	burst = 5
 	firemodes = list(
-		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-2,-2,-3,-3),          dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-2,-2,-3,-3,-4,-4,-5), dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8, 1.8, 2.0, 2.0)),
 		)
 	item_icons = list(
 		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
@@ -333,8 +336,8 @@
 	burst = 5
 	load_method = MAGAZINE
 	firemodes = list(
-		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-2,-2,-3,-3),          dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-2,-2,-3,-3,-4,-4,-5), dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8, 1.8, 2.0, 2.0)),
 		)
 	item_icons = list(
 		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
@@ -353,7 +356,7 @@
 
 /obj/item/weapon/gun/projectile/wwi/chauchat
 	name = "\improper FM Chauchat"
-	desc = "A french light machine gun, known for overheating and frequent failures. Supports 20-round magazine feed system. Uses 8mm ammo."
+	desc = "A French light machine gun, known for overheating and frequent failures. Supports 20-round magazine feed system. Uses 8mm ammo."
 	icon_state = "chauchat"
 	item_state = "chauchat"
 	caliber = "8mm"
@@ -364,9 +367,10 @@
 	slot_flags = 0
 	burst = 5
 	load_method = MAGAZINE
+	jam_chance = 10
 	firemodes = list(
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 0.6)),
-		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-1,-1,-2,-2,-3), dispersion=list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(1.0, 1.4, 1.4)),
+		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-2,-2,-3,-3,-4), dispersion=list(1.0, 1.4, 1.4, 1.6, 1.6)),
 		)
 	item_icons = list(
 		slot_l_hand_str = 'icons/FoF/lefthand_guns.dmi',
@@ -404,7 +408,7 @@
 
 /obj/item/weapon/gun/projectile/wwi/mauser
 	name = "\improper Mauser C96"
-	desc = "A Mauser, expensive yet reliable german pistol."
+	desc = "A Mauser, expensive yet reliable German pistol. Takes 9mm stripper clips."
 	magazine_type = /obj/item/ammo_magazine/c9mm
 	fire_sound = 'sound/weapons/ruby.ogg'
 	icon_state = "c96"
@@ -421,3 +425,121 @@
 	else
 		icon_state = "c96_empty"
 	return
+
+/obj/item/weapon/gun/projectile/wwi/p08
+	name = "\improper Luger P08"
+	desc = "Standard German pistol, used by men who can't afford Mausers. Takes 9mm magazines."
+	magazine_type = /obj/item/ammo_magazine/c9mml
+	icon_state = "luger"
+	caliber = "9mm"
+	max_shells = 8
+	fire_sound = 'sound/weapons/ruby.ogg'
+	load_method = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/c9mm
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	burst = 1
+	burst_delay = 1
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=0, move_delay=6,    burst_accuracy=list(0),       dispersion=list(0.6)),
+		list(mode_name="fully automatic", 	burst=8, fire_delay=2, move_delay=6,    burst_accuracy=list(-2,-2,-3,-3,-4,-4,-5,-5), dispersion=list(1.0, 1.4, 1.4, 1.6, 1.6)),
+		)
+
+/obj/item/weapon/gun/projectile/wwi/p08/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "luger"
+	else
+		icon_state = "luger_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/bolt
+	var/recentbolt = 0
+	handle_casings = HOLD_CASINGS
+
+/obj/item/weapon/gun/projectile/wwi/bolt/consume_next_projectile()
+	if(chambered)
+		return chambered.BB
+	return null
+
+/obj/item/weapon/gun/projectile/wwi/bolt/attack_self(mob/living/user as mob)
+	if(world.time >= recentbolt + 10)
+		bolt(user)
+		recentbolt = world.time
+
+obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
+	playsound(M, 'icons/FoF/sound/weapons/g98_reload1.ogg', 70, 1)
+
+	if(chambered)//We have a shell in the chamber
+		chambered.loc = get_turf(src)//Eject casing
+		chambered = null
+
+	if(loaded.len)
+		var/obj/item/ammo_casing/AC = loaded[1] //load next casing.
+		loaded -= AC //Remove casing from loaded list.
+		chambered = AC
+
+	update_icon()
+
+/obj/item/weapon/gun/projectile/wwi/bolt/proc/load_from_box(var/obj/item/ammo_box/box,var/mob/user)
+	if(box.contents.len == 0 || isnull(box.contents.len))
+		to_chat(user,"<span class ='notice'>The [box.name] is empty!</span>")
+		return
+	if(!(loaded.len <= max_shells))
+		to_chat(user,"<span class = 'notice'>The [name] is full!</span>")
+		return
+	to_chat(user,"<span class ='notice'>You start loading the [name] from the [box.name]</span>")
+	for(var/ammo in box.contents)
+		if(do_after(user,box.load_time SECONDS,box, same_direction = 1))
+			load_ammo(ammo,user)
+			continue
+		break
+
+	box.update_icon()
+
+/obj/item/weapon/gun/projectile/wwi/bolt/attackby(var/obj/item/W,var/mob/user)
+	if(istype(W,/obj/item/ammo_box))
+		load_from_box(W,user)
+	return ..()
+
+/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle
+	name = "\improper G98 rifle"
+	desc = "A simple yet reliable German rifle. Supports 7.92mm stripper clips."
+	icon_state = "g98"
+	item_state = "ba_rifle"
+	magazine_type = /obj/item/ammo_magazine/g792
+	w_class = 4
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a792"
+	fire_sound = 'sound/weapons/g98.ogg'
+	max_shells = 4
+	accuracy = 1
+	w_class = ITEM_SIZE_HUGE
+	ammo_type = /obj/item/ammo_casing/a792
+
+/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle/scoped
+	name = "\improper G98 scoped rifle"
+	desc = "A simple yet reliable German rifle with an attached scope. Supports 7.92mm stripper clips."
+	icon_state = "g98_scoped"
+	accuracy = 2
+
+/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle/scoped/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 1.5)
+
+/obj/item/weapon/gun/projectile/wwi/bolt/lebel
+	name = "\improper Lebel"
+	desc = "A sturdy old French rifle, able to be used as a club in a pinch. Uses 8mm ammo."
+	icon_state = "lebel"
+	caliber = "8mm"
+	fire_sound = 'sound/weapons/lebel.ogg'
+	max_shells = 7
+	ammo_type = /obj/item/ammo_casing/c8mm
+	w_class = 4
+	force = 15
+	slot_flags = SLOT_BACK
+	accuracy = 1

@@ -240,7 +240,7 @@
 	icon_state = "mg08mag"
 	mag_type = MAGAZINE
 	caliber = "a792"
-	matter = list(DEFAULT_WALL_MATERIAL = 7500)
+	matter = list(DEFAULT_WALL_MATERIAL = 12500)
 	ammo_type = /obj/item/ammo_casing/a792
 	max_ammo = 50
 	multiple_sprites = 1
@@ -303,9 +303,42 @@
 obj/item/ammo_magazine/c9mm/empty
 	initial_ammo = 0
 
-obj/item/ammo_magazine/c9mm/handful
-	name = "handful of 9mm casings"
-	icon_state = "pbullet_1"
-	max_ammo = 6
+/obj/item/ammo_magazine/c9mml
+	name = "9mm magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "p08mag"
+	mag_type = MAGAZINE
+	caliber = "9mm"
+	max_ammo = 8
+	matter = list(DEFAULT_WALL_MATERIAL = 480)
 	ammo_type = /obj/item/ammo_casing/c9mm
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c9mml/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/a445
+	name = "speed loader (.455)"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "webleymag"
+	caliber = "455"
+	ammo_type = /obj/item/ammo_casing/a455
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/a445/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/g792
+	name = "7.92mm stripper clip"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "stripclip"
+	caliber = "a792"
+	ammo_type = /obj/item/ammo_casing/a792
+	matter = list(DEFAULT_WALL_MATERIAL = 1250)
+	max_ammo = 5
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/g792/empty
+	initial_ammo = 0

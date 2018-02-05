@@ -659,3 +659,8 @@
 	name = "makeshift ranks (WO-1 warrant officer 1)"
 	desc = "Insignia denoting the elusive rank of Warant Officer. Too bad it's obviously fake."
 	icon_state = "fleetrank_officer"
+
+obj/item/clothing/under/wwi
+	icon = 'icons/FoF/clothes.dmi'
+
+obj/item/clothing/under/wwi/brit

@@ -15,6 +15,6 @@
 	dock_name     = "Train Station"
 	boss_name     = "God"
 	boss_short    = "God"
-	company_name  = "War For The West"
-	company_short = "War For The West"
+	company_name  = "your command structure"
+	company_short = "command"
 	system_name = "Undisclosed Location"

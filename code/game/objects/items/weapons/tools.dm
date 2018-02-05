@@ -37,8 +37,9 @@ obj/item/weapon/wrench/trench
 	icon = 'icons/FoF/tools_ww1.dmi'
 	icon_state = "ww1_multitool-wrench"
 	desc = "A heavy wrench coated in rust. A small wheel near the head allows for size adjustment."
-	force = 30
+	force = 20
 	throwforce = 10
+	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
 
 /*
  * Screwdriver
@@ -60,7 +61,7 @@ obj/item/weapon/wrench/trench
 	throw_range = 5
 	matter = list(DEFAULT_WALL_MATERIAL = 75)
 	center_of_mass = "x=16;y=7"
-	attack_verb = list("stabbed")
+	attack_verb = list("stabbed","shanked","jabbed")
 	lock_picking_level = 5
 
 /obj/item/weapon/screwdriver/trench
@@ -68,7 +69,15 @@ obj/item/weapon/wrench/trench
 	desc = "A small screwdriver with a wide grip."
 	icon = 'icons/FoF/tools_ww1.dmi'
 	icon_state = "ww1_screwdriver"
-	force = 15
+	force = 10
+	slot_flags = SLOT_BELT
+
+/obj/item/weapon/screwdriver/opener
+	name = "can opener"
+	desc = "A bottle opener that doubles as a screwdriver in a pinch."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "opener"
+	force = 0
 	slot_flags = SLOT_BELT
 
 /obj/item/weapon/screwdriver/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
@@ -443,8 +452,9 @@ obj/item/weapon/crowbar/trench
 	icon_state = "ww1_multitool-crowbar"
 	name = "crowbar"
 	desc = "A rusty crowbar with a menacing hooked end."
-	force = 30
+	force = 20
 	throwforce = 10
+	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
 
 /obj/item/weapon/weldingtool/attack(mob/living/M, mob/living/user, target_zone)
 

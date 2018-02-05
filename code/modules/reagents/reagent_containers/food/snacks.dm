@@ -3269,10 +3269,12 @@
 		reagents.add_reagent(/datum/reagent/iron, 3)
 		bitesize = 4
 
-/obj/item/weapon/reagent_containers/food/snacks/cansoup
+/obj/item/weapon/reagent_containers/food/snacks/can
+	icon = 'icons/FoF/misc.dmi'
+
+/obj/item/weapon/reagent_containers/food/snacks/can/soup
 	name = "\improper Ration Soup"
 	desc = "A can of sour soup meant to last months in the trenches."
-	icon = 'icons/FoF/misc.dmi'
 	icon_state = "soup"
 	throwforce = 10
 	trash = /obj/item/trash/cansoup
@@ -3280,6 +3282,7 @@
 	nutriment_desc = list("sourness" = 2,"stale soup" = 2)
 	nutriment_amt = 20
 	throw_range = 5
+	flags = OPENCONTAINER
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 2)
@@ -3287,15 +3290,14 @@
 		reagents.add_reagent(/datum/reagent/nutriment, 4)
 		bitesize = 5
 
-/obj/item/weapon/reagent_containers/food/snacks/canbeans
+/obj/item/weapon/reagent_containers/food/snacks/can/beans
 	name = "\improper Ration Beans"
 	desc = "A can of bland beans meant to last months in the trenches."
-	icon = 'icons/FoF/misc.dmi'
 	icon_state = "beans"
 	throwforce = 10
 	trash = /obj/item/trash/canbean
 	center_of_mass = "x=16;y=15"
-	nutriment_desc = list("dirt" = 2,"stale beans" = 2)
+	nutriment_desc = list("dirt" = 2,"stale beans" = 4)
 	nutriment_amt = 20
 	throw_range = 5
 	New()
@@ -3305,15 +3307,14 @@
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 10)
 		bitesize = 5
 
-/obj/item/weapon/reagent_containers/food/snacks/canfish
+/obj/item/weapon/reagent_containers/food/snacks/can/fish
 	name = "\improper Ration Fish"
 	desc = "A can of reeking fish meant to last months in the trenches."
-	icon = 'icons/FoF/misc.dmi'
 	icon_state = "fish"
 	throwforce = 10
 	trash = /obj/item/trash/canfish
 	center_of_mass = "x=16;y=15"
-	nutriment_desc = list("rotten mush" = 2,"fish" = 2)
+	nutriment_desc = list("rotten seafood" = 2,"fish" = 4)
 	nutriment_amt = 20
 	throw_range = 7
 	New()

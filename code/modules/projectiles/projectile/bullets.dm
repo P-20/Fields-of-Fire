@@ -137,6 +137,10 @@
 	fire_sound = 'sound/weapons/ruby.ogg'
 	damage = 20
 
+/obj/item/projectile/bullet/pistol/a445
+	fire_sound = 'sound/weapons/webley.ogg'
+	damage = 30
+
 /obj/item/projectile/bullet/pistol/medium
 	damage = 25
 
@@ -189,7 +193,7 @@
 
 /obj/item/projectile/bullet/rifle/a792
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
-	damage = 25
+	damage = 30
 
 /obj/item/projectile/bullet/rifle/a303
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'

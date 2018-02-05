@@ -67,7 +67,7 @@
 	icon_state = "papcase"
 	w_class = ITEM_SIZE_NORMAL
 	ammo_spawnwith = list(/obj/item/ammo_casing/shotgun/trench)
-	load_time = 2
+	load_time = 1.5
 
 /obj/item/ammo_box/shotgun/slug
 	name = "Shotgun Slug Box"
@@ -108,3 +108,17 @@
 
 /obj/item/ammo_box/shotgun/flash/update_icon()
 	desc = "[initial(desc)] It has [contents.len] practice shells left."
+
+/obj/item/ammo_box/lebel
+	name = "\improper box of 8mm rounds"
+	desc = "A box holding one full load of 8mm for ease of loading the Lebel rifle."
+	ammo_spawnwith = list(/obj/item/ammo_casing/c8mm)
+	w_class = ITEM_SIZE_NORMAL
+	icon_state = "lebelbox"
+	icon = 'icons/FoF/munitions.dmi'
+	capacity = 8
+	load_time = 1.5
+
+/obj/item/ammo_box/lebel/update_icon()
+	desc = "[initial(desc)] It has [contents.len] 8mm rounds left."
+

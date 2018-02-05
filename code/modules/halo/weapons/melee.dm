@@ -6,7 +6,7 @@
 	icon_state = "Knife"
 	item_state = "butterflyknife_open"
 	w_class = 2
-	force = 30
+	force = 20
 	throwforce = 10
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")

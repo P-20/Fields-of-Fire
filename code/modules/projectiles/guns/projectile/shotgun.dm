@@ -72,8 +72,8 @@
 	one_hand_penalty = 3 //a little heavier than the regular shotgun
 
 /obj/item/weapon/gun/projectile/shotgun/pump/trenchgun
-	name = "trenchgun"
-	desc = "Useful for sweeping trenches."
+	name = "\improper Trenchgun"
+	desc = "An imported American shotgun useful for clearing trenches. Takes shotgun shells."
 	icon_state = "trenchgun"
 	item_state = "shotgun_w"
 	icon = 'icons/FoF/weaponsnew.dmi'
@@ -87,6 +87,8 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/trench
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
+	force = 15
+	jam_chance = 5
 
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
@@ -157,3 +159,4 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	one_hand_penalty = 0
+

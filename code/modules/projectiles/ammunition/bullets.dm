@@ -222,7 +222,7 @@
 	icon = 'icons/FoF/munitions.dmi'
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
-	matter = list(DEFAULT_WALL_MATERIAL = 150)
+	matter = list(DEFAULT_WALL_MATERIAL = 250)
 
 /obj/item/ammo_casing/a303
 	desc = "A .303 British casing."
@@ -247,7 +247,7 @@
 	caliber = ".32"
 	projectile_type = /obj/item/projectile/bullet/pistol/c32acp
 	icon = 'icons/FoF/munitions.dmi'
-	icon_state = "pbullet_1"
+	icon_state = "pbullet"
 	spent_icon = "r-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 60)
 
@@ -256,6 +256,15 @@
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/pistol/c9mm
 	icon = 'icons/FoF/munitions.dmi'
-	icon_state = "pbullet_1"
+	icon_state = "pbullet"
 	spent_icon = "r-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 60)
+
+/obj/item/ammo_casing/a455
+	desc = "A .455 casing."
+	caliber = "455"
+	projectile_type = /obj/item/projectile/bullet/pistol/a445
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "pbullet"
+	spent_icon = "rifle-casing-spent"
+	matter = list(DEFAULT_WALL_MATERIAL = 250)
