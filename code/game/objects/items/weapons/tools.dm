@@ -40,6 +40,7 @@ obj/item/weapon/wrench/trench
 	force = 20
 	throwforce = 10
 	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
+	w_class = ITEM_SIZE_NORMAL
 
 /*
  * Screwdriver
@@ -455,6 +456,8 @@ obj/item/weapon/crowbar/trench
 	force = 20
 	throwforce = 10
 	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
+	w_class = ITEM_SIZE_NORMAL
+	armor_penetration = 20
 
 /obj/item/weapon/weldingtool/attack(mob/living/M, mob/living/user, target_zone)
 
@@ -480,6 +483,7 @@ obj/item/weapon/weldingtool/trench
 	icon = 'icons/FoF/tools_ww1.dmi'
 	icon_state = "ww1_welder"
 	desc = "A rusty old welding tool attached to a fuel tank."
+	w_class = ITEM_SIZE_NORMAL
 
 /obj/item/weapon/weldingtool/trench/get_storage_cost()
 	if(isOn())

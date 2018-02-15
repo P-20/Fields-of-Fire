@@ -1,3 +1,4 @@
+turf/simulated/wall
 /turf/simulated/wall/r_wall
 	icon_state = "rgeneric"
 /turf/simulated/wall/r_wall/New(var/newloc)
