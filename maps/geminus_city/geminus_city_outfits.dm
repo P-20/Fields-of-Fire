@@ -80,18 +80,14 @@
 
 	flags = 0
 
-/decl/hierarchy/outfit/job/police
-	name = "GCPD Officer"
+/decl/hierarchy/outfit/job/tester
+	name = "Tester"
 
-	head = /obj/item/clothing/head/soft/sec/corp
-	uniform = /obj/item/clothing/under/police
-	suit = /obj/item/clothing/suit/armor/vest/police
-	belt = /obj/item/weapon/storage/belt/security
-	shoes = /obj/item/clothing/shoes/dutyboots
-	pda_slot = slot_r_store
-	back = /obj/item/weapon/gun/projectile/shotgun/pump/m90_ts/police
-	gloves = /obj/item/clothing/gloves/guards
-	l_pocket = /obj/item/clothing/accessory/badge/security
+	uniform = /obj/item/clothing/under/wwi/brit
+	shoes = /obj/item/clothing/shoes/british
+	belt = /obj/item/weapon/gun/projectile/wwi/mauser
+	suit = /obj/item/clothing/suit/storage/wwi/britishcoat
+	id_type = /obj/item/weapon/card/id/wwi/brittin
 
 	flags = 0
 
@@ -108,3 +104,8 @@
 	desc = "A black uniform worn by the GCPD."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
+
+/decl/hierarchy/outfit/job/tester/equip_id(mob/living/carbon/human/H)
+	var/obj/item/weapon/card/id/wwi/brittin/C = ..()
+	C.assignment = "Tester"
+	H.set_id_info(C)

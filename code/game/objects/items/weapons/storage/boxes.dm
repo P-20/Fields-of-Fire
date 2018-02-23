@@ -297,7 +297,7 @@
 	desc = "<B><FONT color='red'>WARNING:</FONT></B> <I>Keep out of reach of children</I>."
 	icon_state = "mousetraps"
 	startswith = list(/obj/item/device/assembly/mousetrap = 6)
-	
+
 /obj/item/weapon/storage/box/mousetraps/empty
 	startswith = null
 
@@ -334,6 +334,28 @@
 		W.update_icon()
 		return
 
+/obj/item/weapon/storage/box/matches/trench
+	name = "matchbook"
+	desc = "A small book of matches. They're advertised as being waterproof."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "matches"
+	item_state = "matches"
+	max_storage_space = 5
+	can_hold = list(/obj/item/weapon/flame/match/trench)
+	startswith = list(/obj/item/weapon/flame/match/trench = 5)
+	attackby(obj/item/weapon/flame/match/trench/W as obj, mob/user as mob)
+		if(istype(W) && !W.lit && !W.burnt)
+			W.lit = 1
+			W.damtype = "burn"
+			W.icon_state = "match_litup"
+			W.set_light(2)
+			GLOB.processing_objects.Add(W)
+		W.update_icon()
+		return
+
+/obj/item/weapon/storage/box/matches/trench/empty
+	icon_state = "matches-0"
+
 /obj/item/weapon/storage/box/autoinjectors
 	name = "box of injectors"
 	desc = "Contains autoinjectors."
@@ -355,7 +377,7 @@
 
 /obj/item/weapon/storage/box/lights/bulbs
 	startswith = list(/obj/item/weapon/light/bulb = 21)
-	
+
 /obj/item/weapon/storage/box/lights/bulbs/empty
 	startswith = null
 
@@ -364,7 +386,7 @@
 	icon_state = "lighttube"
 	startswith = list(/obj/item/weapon/light/tube = 17,
 					/obj/item/weapon/light/tube/large = 4)
-					
+
 /obj/item/weapon/storage/box/lights/tubes/empty
 	startswith = null
 
@@ -374,7 +396,7 @@
 	startswith = list(/obj/item/weapon/light/tube = 12,
 					/obj/item/weapon/light/tube/large = 4,
 					/obj/item/weapon/light/bulb = 5)
-					
+
 /obj/item/weapon/storage/box/lights/mixed/empty
 	startswith = null
 
@@ -452,3 +474,11 @@
 	name = "box of spare medical armbands"
 	desc = "A box full of medical armbands. For use in emergencies when provisional medical personnel are needed."
 	startswith = list(/obj/item/clothing/accessory/armband/med = 5)
+
+/obj/item/weapon/storage/box/letter
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "lettercase"
+	name = "Receipts"
+	desc = "The letter they gave you with your tags. Contains a Requisition Receipt and Transportation Receipt. Don't use the Transportation Receipt until you've gotten your gear with the Requisition Receipt."
+	max_storage_space = 2
+	startswith = list(/obj/item/weapon/coin/req = 1)

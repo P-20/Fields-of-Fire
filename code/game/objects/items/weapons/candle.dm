@@ -69,3 +69,9 @@
 		lit = 0
 		update_icon()
 		set_light(0)
+
+/obj/item/weapon/flame/candle/trench
+	name = "lamp"
+	icon = 'icons/FoF/misc.dmi'
+	desc = "A handlamp for guiding your way in the darkness."
+	w_class = ITEM_SIZE_LARGE

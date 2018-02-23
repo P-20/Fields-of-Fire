@@ -91,5 +91,10 @@
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "fish_e"
 
+/obj/item/trash/bowl
+	name = "empty bowl"
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "bowl"
+
 /obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
 	return

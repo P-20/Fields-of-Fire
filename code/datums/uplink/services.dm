@@ -243,7 +243,7 @@
 	if(I)
 		general.fields["fingerprint"] 	= I.fingerprint_hash
 		medical.fields["b_type"]	= I.blood_type
-		medical.fields["b_dna"]		= I.dna_hash
+//		medical.fields["b_dna"]		= I.dna_hash
 
 	var/datum/job/job = job_master.GetJob(general.fields["rank"])
 	if(istype(job) && job.announced)

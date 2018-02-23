@@ -118,7 +118,21 @@
 	icon = 'icons/FoF/munitions.dmi'
 	capacity = 8
 	load_time = 1.5
+	slot_flags = SLOT_BELT
 
 /obj/item/ammo_box/lebel/update_icon()
 	desc = "[initial(desc)] It has [contents.len] 8mm rounds left."
 
+/obj/item/ammo_box/winchester
+	name = "\improper box of .30-30 rounds"
+	desc = "A box holding one full load of .30-30 for the Winchester rifle."
+	ammo_spawnwith = list(/obj/item/ammo_casing/a3030)
+	w_class = ITEM_SIZE_NORMAL
+	icon_state = "lebelbox"
+	icon = 'icons/FoF/munitions.dmi'
+	capacity = 8
+	load_time = 1.5
+	slot_flags = SLOT_BELT
+
+/obj/item/ammo_box/lebel/update_icon()
+	desc = "[initial(desc)] It has [contents.len] .30-30 rounds left."

@@ -1,3 +1,5 @@
+#define WWI_OVERRIDE 'icons/FoF/clothes.dmi'
+#define MOB_OVERRIDE 'icons/FoF/mob_clothing.dmi'
 
 /obj/item/clothing/suit/armor
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
@@ -449,3 +451,203 @@
 	desc = "A heavy armored vest in a light grey urban camo. It is surprisingly flexible and light, even with the extra webbing and advanced ceramic plates."
 	icon_state = "m_vest"
 	item_state = "m_vest"
+
+/obj/item/clothing/suit/storage/wwi
+	icon = 'icons/FoF/clothes.dmi'
+
+/obj/item/clothing/suit/storage/wwi/germancoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "German trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "germtrench"
+	item_state = "germtrench"
+	blood_overlay_type = "coat"
+	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
+
+/obj/item/clothing/suit/storage/wwi/britishcoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "British trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "britttrench"
+	item_state = "britttrench"
+	blood_overlay_type = "coat"
+	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
+
+/obj/item/clothing/suit/storage/wwi/frenchcoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "French trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "frenchtrench"
+	item_state = "frenchtrench"
+	blood_overlay_type = "coat"
+	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
+
+/obj/item/clothing/shoes/german
+	name = "German boots"
+	desc = "Standard issue boots for keeping water off your feet."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "germboots"
+	icon_state = "germboots"
+	force = 5
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	item_flags = NOSLIP
+	siemens_coefficient = 0.6
+	body_parts_covered = FEET|LEGS
+	cold_protection = FEET
+	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/shoes/french
+	name = "French boots"
+	desc = "Standard issue boots for keeping water off your feet."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "frenchboots"
+	icon_state = "frenchboots"
+	force = 5
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	item_flags = NOSLIP
+	siemens_coefficient = 0.6
+	body_parts_covered = FEET|LEGS
+	cold_protection = FEET
+	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/shoes/british
+	name = "British boots"
+	desc = "Standard issue boots for keeping water off your feet."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "brittboots"
+	icon_state = "brittboots"
+	force = 5
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	item_flags = NOSLIP
+	siemens_coefficient = 0.6
+	body_parts_covered = FEET|LEGS
+	cold_protection = FEET
+	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/germansoft
+	name = "German softcap"
+	desc = "A thick leather cap for keeping your head warm."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "germhelm"
+	icon_state = "germhelm"
+	body_parts_covered = HEAD
+	flags_inv = BLOCKHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/frenchsoft
+	name = "French softcap"
+	desc = "A thick leather cap for keeping your head warm."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "frenchhelm"
+	icon_state = "frenchhelm"
+	body_parts_covered = HEAD
+	flags_inv = BLOCKHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/britsoft
+	name = "British softcap"
+	desc = "A thick leather cap made to look like a helmet to give a false sense of security."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "britthelm"
+	icon_state = "britthelm"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 10, bullet = 10, laser = 0,energy = 0, bomb = 5, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/germanofficer
+	name = "German Officer cap"
+	desc = "A pointed hat. For those that want to be distinguished rather than protected."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "germcap"
+	icon_state = "germcap"
+	body_parts_covered = HEAD
+	armor = list(melee = 5, bullet = 5, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/britofficer
+	name = "British Officer cap"
+	desc = "A pointed hat. For those that want to be distinguished rather than protected."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "brittcap"
+	icon_state = "brittcap"
+	body_parts_covered = HEAD
+	armor = list(melee = 5, bullet = 5, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/frenchofficer
+	name = "French Officer cap"
+	desc = "A flat hat with a bill. For those that want to be distinguished rather than protected."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "frenchcap"
+	icon_state = "frenchcap"
+	body_parts_covered = HEAD
+	armor = list(melee = 5, bullet = 5, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/mask/gas/wwi
+	name = "gas mask"
+	desc = "A mass produced gas mask bought by every nation as a quick and cheap counter to chemical weapons."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	armor = list(melee = 0, bullet = 0, laser = 2,energy = 2, bomb = 0, bio = 90, rad = 0)
+	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/mask/gas/wwi/french
+	name = "gas mask"
+	desc = "A mass produced gas mask. A quick and cheap counter to chemical weapons."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	icon_state = "frenchgasmask"
+	item_state = "frenchgasmask"
+
+/obj/item/clothing/mask/gas/wwi/german
+	name = "gas mask"
+	desc = "A mass produced gas mask. A quick and cheap counter to chemical weapons."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	icon_state = "germgasmask"
+	item_state = "germgasmask"
+
+/obj/item/clothing/mask/gas/wwi/british
+	name = "gas mask"
+	desc = "A mass produced gas mask. A quick and cheap counter to chemical weapons."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	icon_state = "brittgasmask"
+	item_state = "brittgasmask"
+
+
+#undef WWI_OVERRIDE
+#undef MOB_OVERRIDE

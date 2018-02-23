@@ -276,7 +276,28 @@
 /obj/item/stack/medical/splint/ghetto
 	name = "makeshift splints"
 	singular_name = "makeshift splint"
-	desc = "For holding your limbs in place with duct tape and scrap metal."
+	desc = "For holding your limbs in place with cloth and scrap metal."
 	icon_state = "tape-splint"
+	w_class = ITEM_SIZE_TINY
 	amount = 1
+	max_amount = 3
 	splintable_organs = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
+
+/obj/item/stack/medical/bruise_pack/trench
+	name = "roll of gauze"
+	singular_name = "strip of gauze"
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "bandage"
+	desc = "These bandages are somehow still sterile and treat a wide variety of wounds."
+	amount = 3
+	heal_burn = 1
+	max_amount = 10
+	w_class = ITEM_SIZE_TINY
+	throw_speed = 4
+	throw_range = 20
+
+/obj/item/stack/medical/bruise_pack/trench/ten
+	amount = 10
+
+/obj/item/stack/medical/splint/ghetto/three
+	amount = 3

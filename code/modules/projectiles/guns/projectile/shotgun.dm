@@ -82,7 +82,6 @@
 		slot_r_hand_str = 'icons/FoF/righthand_guns.dmi',
 		)
 	fire_sound = 'sound/weapons/trenchgun.ogg'
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	max_shells = 5
 	ammo_type = /obj/item/ammo_casing/shotgun/trench
 	w_class = ITEM_SIZE_HUGE

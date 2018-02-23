@@ -144,6 +144,15 @@
 			var/image/lid = image(icon, src, "lid_[initial(icon_state)]")
 			overlays += lid
 
+/obj/item/weapon/reagent_containers/glass/trench
+	name = "tin cup"
+	desc = "This tin cup has some weight to it."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "cup"
+	center_of_mass = "x=15;y=10"
+	matter = list("steel" = 500)
+	volume = 50
+
 /obj/item/weapon/reagent_containers/glass/beaker/large
 	name = "large beaker"
 	desc = "A large beaker."

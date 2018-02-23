@@ -1,9 +1,9 @@
 
 /datum/map/geminus_city
-	allowed_jobs = list(/datum/job/colonist,/datum/job/innie_sympathiser,/datum/job/insurrectionist_recruiter,/datum/job/colonist_mayor,/datum/job/marine,/datum/job/marine_leader,/datum/job/police)
-	allowed_spawns = list("Colony Arrival Shuttle","UNSC Peacekeeping Ship","UNSC Peacekeeping Ship - Leader Quarters")
+	allowed_jobs = list(/datum/job/tester)
+	allowed_spawns = list("Colony Arrival Shuttle")
 
-	default_spawn = "UNSC Peacekeeping Ship"
+	default_spawn = "Colony Arrival Shuttle"
 
 /datum/job/colonist
 	title = "Colonist"
@@ -110,12 +110,12 @@
 
 	latejoin_at_spawnpoints = FALSE
 
-/datum/job/police
-	title = "GCPD Officer"
-	total_positions = 6
+/datum/job/tester
+	title = "Tester"
+	total_positions = 20
 	selection_color = "#000000"
 
-	supervisors = " the Colony Mayor"
+	supervisors = "god"
 
 	create_record = 0
 	account_allowed = 1
@@ -123,6 +123,6 @@
 
 	loadout_allowed = TRUE
 	announced = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/police
+	outfit_type = /decl/hierarchy/outfit/job/tester
 
-	latejoin_at_spawnpoints = FALSE
+	latejoin_at_spawnpoints = TRUE

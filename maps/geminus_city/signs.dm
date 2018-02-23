@@ -286,3 +286,50 @@
 	name = "\improper techshop"
 	desc = "A sign which reads 'tech shop'."
 	icon_state = "techshop"
+
+/obj/structure/sign/trench
+	icon = 'icons/FoF/Signs.dmi'
+	name = "wooden sign"
+
+/obj/structure/sign/trench/wallammo
+	icon_state = "wallammo"
+	desc = "A wooden sign indicating this is where ammo is stored."
+/obj/structure/sign/trench/wallmine
+	icon_state = "wallmine"
+	desc = "A wooden sign warning that there are mines nearby."
+/obj/structure/sign/trench/wallnml
+	icon_state = "wallnml"
+	desc = "A wooden sign warning that death lies beyond this point."
+/obj/structure/sign/trench/wallmed
+	icon_state = "wallmed"
+	desc = "A wooden sign indicating this is the medical dug out."
+/obj/structure/sign/trench/wallfood
+	icon_state = "wallfood"
+	desc = "A wooden sign indicating this is where food is."
+/obj/structure/sign/trench/wallhq
+	icon_state = "wallhq"
+	desc = "A wooden sign indicating this is where HQ is."
+/obj/structure/sign/trench/wallqm
+	icon_state = "wallqm"
+	desc = "A wooden sign indicating that this is the Quartermaster."
+/obj/structure/sign/trench/ammo
+	icon_state = "ammo"
+	desc = "A wooden sign indicating this is where ammo is stored."
+/obj/structure/sign/trench/mine
+	icon_state = "mine"
+	desc = "A wooden sign warning that there are mines nearby."
+/obj/structure/sign/trench/nml
+	icon_state = "nml"
+	desc = "A wooden sign warning that death lies beyond this point."
+/obj/structure/sign/trench/med
+	icon_state = "med"
+	desc = "A wooden sign indicating this is the medical dug out."
+/obj/structure/sign/trench/food
+	icon_state = "food"
+	desc = "A wooden sign indicating this is where food is."
+/obj/structure/sign/trench/hq
+	icon_state = "hq"
+	desc = "A wooden sign indicating this is where HQ is."
+/obj/structure/sign/trench/qm
+	icon_state = "qm"
+	desc = "A wooden sign indicating that this is where the Quartermaster resides."

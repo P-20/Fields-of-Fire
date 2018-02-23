@@ -92,3 +92,26 @@
 	max_w_class = ITEM_SIZE_HUGE
 	w_class = ITEM_SIZE_SMALL
 	can_hold = list(/obj/item/weapon/coin,/obj/item/weapon/spacecash)
+
+/obj/item/weapon/storage/bag/wwi
+	icon = 'icons/FoF/misc.dmi'
+	can_hold = list(/obj/item/weapon/reagent_containers/food/snacks,/obj/item/ammo_magazine)
+	max_storage_space = 8
+	w_class = ITEM_SIZE_HUGE
+	icon_state = "grainbag"
+
+/obj/item/weapon/storage/bag/wwi/oats
+	name = "bag of oats"
+	desc = "A burlap sack of processed oats."
+	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/oats = 8)
+
+/obj/item/weapon/storage/bag/wwi/beans
+	name = "bag of beans"
+	desc = "A burlap sack of... beans?"
+	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/beans = 8)
+
+/obj/item/weapon/storage/bag/wwi/ham
+	name = "bag of ham"
+	desc = "A burlap sack of dried ham. That can't be sanitary."
+	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/ham = 4)
+	max_storage_space = 4

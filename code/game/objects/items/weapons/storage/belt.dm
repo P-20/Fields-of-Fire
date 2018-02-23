@@ -209,3 +209,20 @@
 /obj/item/weapon/storage/belt/waistpack/big/New()
 	..()
 	slowdown_per_slot[slot_belt] = 3
+
+/obj/item/weapon/storage/belt/trenchmed
+	icon = 'icons/FoF/misc.dmi'
+	name = "medical satchel"
+	desc = "A red bag with a yellow cross that shows that the contents are medical in nature."
+	w_class = ITEM_SIZE_HUGE
+	max_w_class = ITEM_SIZE_SMALL
+	storage_slots = 4
+	show_above_suit = 0
+	icon_state = "medkit"
+	slot_flags = SLOT_BELT | SLOT_BACK
+
+/obj/item/weapon/storage/belt/trenchmed/New()
+	..()
+	new /obj/item/stack/medical/bruise_pack/trench(src)
+	new /obj/item/stack/medical/bruise_pack/trench(src)
+	new /obj/item/stack/medical/splint/ghetto/three(src)

@@ -301,7 +301,7 @@
 	ammo_type = /obj/item/ammo_casing/a792
 	magazine_type = /obj/item/ammo_magazine/box/a792
 	allowed_magazines = /obj/item/ammo_magazine/box/a792
-	one_hand_penalty = 6
+	one_hand_penalty = -1
 	burst = 5
 	firemodes = list(
 		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-2,-2,-3,-3),          dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8)),
@@ -331,7 +331,7 @@
 	ammo_type = /obj/item/ammo_casing/a303
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	magazine_type = /obj/item/ammo_magazine/box/mp303
-	one_hand_penalty = 6
+	one_hand_penalty = -1
 	slot_flags = 0
 	burst = 5
 	load_method = MAGAZINE
@@ -395,7 +395,7 @@
 	caliber = ".32"
 	fire_sound = 'sound/weapons/ruby.ogg'
 	load_method = MAGAZINE
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 
 /obj/item/weapon/gun/projectile/wwi/ruby/update_icon()
@@ -508,7 +508,6 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	icon_state = "g98"
 	item_state = "ba_rifle"
 	magazine_type = /obj/item/ammo_magazine/g792
-	w_class = 4
 	force = 10
 	slot_flags = SLOT_BACK
 	caliber = "a792"
@@ -539,7 +538,151 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	fire_sound = 'sound/weapons/lebel.ogg'
 	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/c8mm
-	w_class = 4
+	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK
 	accuracy = 1
+
+/obj/item/weapon/gun/projectile/wwi/bolt/smle
+	name = "\improper Lee-Enfield"
+	desc = "The British Army's standard rifle from its official adoption in 1895. Takes 5-round .303 British stripper clips."
+	icon_state = "smle"
+	slot_flags = SLOT_BACK
+	fire_sound = 'sound/weapons/smle.ogg'
+	w_class = ITEM_SIZE_HUGE
+	max_shells = 5
+	caliber = "a303"
+	ammo_type = /obj/item/ammo_casing/a303
+
+/obj/item/weapon/gun/projectile/wwi/bolt/smle/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "smle"
+	else
+		icon_state = "smle_empty"
+	return
+
+/obj/item/weapon/gun/projectile/wwi/bolt/smle/scoped
+	name = "\improper Scoped Lee-Enfield"
+	desc = "The British Army's standard rifle from its official adoption in 1895. This one has an attached scope. Takes 5-round .303 British stripper clips."
+	icon_state = "smle_scoped"
+	accuracy = 2
+
+/obj/item/weapon/gun/projectile/wwi/bolt/smle/scoped/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 1.5)
+
+/obj/item/weapon/gun/projectile/wwi/lever
+	var/leveruse = 0
+	handle_casings = HOLD_CASINGS
+
+/obj/item/weapon/gun/projectile/wwi/lever/consume_next_projectile()
+	if(chambered)
+		return chambered.BB
+	return null
+
+/obj/item/weapon/gun/projectile/wwi/lever/attack_self(mob/living/user as mob)
+	if(world.time >= leveruse + 10)
+		lever(user)
+		leveruse = world.time
+
+obj/item/weapon/gun/projectile/wwi/lever/proc/lever(mob/M as mob)
+	playsound(M, 'icons/FoF/sound/weapons/g98_reload2.ogg', 70, 1)
+
+	if(chambered)//We have a shell in the chamber
+		chambered.loc = get_turf(src)//Eject casing
+		chambered = null
+
+	if(loaded.len)
+		var/obj/item/ammo_casing/AC = loaded[1] //load next casing.
+		loaded -= AC //Remove casing from loaded list.
+		chambered = AC
+
+	update_icon()
+
+/obj/item/weapon/gun/projectile/wwi/lever/proc/load_from_box(var/obj/item/ammo_box/box,var/mob/user)
+	if(box.contents.len == 0 || isnull(box.contents.len))
+		to_chat(user,"<span class ='notice'>The [box.name] is empty!</span>")
+		return
+	if(!(loaded.len <= max_shells))
+		to_chat(user,"<span class = 'notice'>The [name] is full!</span>")
+		return
+	to_chat(user,"<span class ='notice'>You start loading the [name] from the [box.name]</span>")
+	for(var/ammo in box.contents)
+		if(do_after(user,box.load_time SECONDS,box, same_direction = 1))
+			load_ammo(ammo,user)
+			continue
+		break
+
+	box.update_icon()
+
+/obj/item/weapon/gun/projectile/wwi/lever/winchester
+	name = "\improper Winchester Model 1894"
+	desc = "An imported American repeating rifle built to be used with smokeless powder. Uses .30-30 Winchester casings."
+	icon_state = "winch"
+	item_state = "ba_rifle"
+	icon = 'icons/FoF/weaponsnew.dmi'
+	slot_flags = SLOT_BACK
+	caliber = "a3030"
+	fire_sound = 'sound/weapons/trenchgun.ogg'
+	max_shells = 7
+	accuracy = 1
+	w_class = ITEM_SIZE_HUGE
+	ammo_type = /obj/item/ammo_casing/a3030
+
+/obj/item/weapon/gun/projectile/wwi/lever/winchester/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(w_class > 3 && (istype(A, /obj/item/weapon/circular_saw) || istype(A, /obj/item/weapon/melee/energy) || istype(A, /obj/item/weapon/pickaxe/plasmacutter)))
+		to_chat(user, "<span class='notice'>You begin to shorten \the [src].</span>")
+		if(do_after(user, 30, src))	//SHIT IS STEALTHY EYYYYY
+			icon_state = "winch_sawed"
+			icon = 'icons/FoF/weaponsnew.dmi'
+			item_state = "ba_rifle"
+			w_class = ITEM_SIZE_NORMAL
+			force = 5
+			one_hand_penalty = 0
+			accuracy = -2
+			max_shells = 4
+			slot_flags &= ~SLOT_BACK	//you can't sling it on your back
+			slot_flags |= (SLOT_BELT|SLOT_HOLSTER) //but you can wear it on your belt (poorly concealed under a trenchcoat, ideally) - or in a holster, why not.
+			name = "shortened Winchester Model 1894"
+			desc = "Someone cut this rifle down for an easier time carrying it."
+			to_chat(user, "<span class='warning'>You create \a [src]! Congrats.</span>")
+	else
+		..()
+
+/obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn
+	name = "shortened Winchester Model 1894"
+	desc = "Someone cut this rifle down for an easier time carrying it."
+	icon_state = "winch_sawed"
+	item_state = "ba_rifle"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	ammo_type = /obj/item/ammo_casing/a3030
+	w_class = ITEM_SIZE_NORMAL
+	force = 5
+	max_shells = 4
+	accuracy = -2
+	one_hand_penalty = 0
+
+/obj/item/weapon/gun/projectile/wwi/colt1911
+	name = "\improper Colt M1911"
+	desc = "An imported American made handgun. Takes .45 ACP magazines."
+	magazine_type = /obj/item/ammo_magazine/a45
+	fire_sound = 'sound/weapons/webley.ogg'
+	icon_state = "colt"
+	caliber = "45"
+	max_shells = 7
+	ammo_type = /obj/item/ammo_casing/a45
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	load_method = MAGAZINE
+
+/obj/item/weapon/gun/projectile/wwi/colt1911/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "colt"
+	else
+		icon_state = "colt_empty"
+	return

@@ -102,11 +102,11 @@ var/const/NO_EMAG_ACT = -50
 
 	var/age = "\[UNSET\]"
 	var/blood_type = "\[UNSET\]"
-	var/dna_hash = "\[UNSET\]"
+//	var/dna_hash = "\[UNSET\]"
 	var/fingerprint_hash = "\[UNSET\]"
 	var/sex = "\[UNSET\]"
-	var/icon/front
-	var/icon/side
+//	var/icon/front
+//	var/icon/side
 
 	//alt titles are handled a bit weirdly in order to unobtrusively integrate into existing ID system
 	var/assignment = null	//can be alt title or the actual job
@@ -139,36 +139,32 @@ var/const/NO_EMAG_ACT = -50
 	return 0
 
 /obj/item/weapon/card/id/proc/show(mob/user as mob)
-	if(front && side)
-		user << browse_rsc(front, "front.png")
-		user << browse_rsc(side, "side.png")
-	var/datum/browser/popup = new(user, "idcard", name, 600, 250)
+	var/datum/browser/popup = new(user, "idcard", name, 400, 200)
 	popup.set_content(dat())
 	popup.set_title_image(usr.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()
 	return
 
 /obj/item/weapon/card/id/proc/update_name()
-	name = "[registered_name]'s ID Card"
+	name = "[registered_name]'s ID Tags"
 	if(military_rank && military_rank.name_short)
 		name = military_rank.name_short + " " + name
 	if(assignment)
 		name = name + " ([assignment])"
 
-/obj/item/weapon/card/id/proc/set_id_photo(var/mob/M)
-	front = getFlatIcon(M, SOUTH, always_use_defdir = 1)
-	side = getFlatIcon(M, WEST, always_use_defdir = 1)
+///obj/item/weapon/card/id/proc/set_id_photo(var/mob/M)
+//	front = getFlatIcon(M, SOUTH, always_use_defdir = 1)
+//	side = getFlatIcon(M, WEST, always_use_defdir = 1)
 
 /mob/proc/set_id_info(var/obj/item/weapon/card/id/id_card)
 	id_card.age = 0
 	id_card.registered_name		= real_name
 	id_card.sex 				= capitalize(gender)
-	id_card.set_id_photo(src)
+//	id_card.set_id_photo(src)
 
 	if(dna)
 		id_card.blood_type		= dna.b_type
-		id_card.dna_hash		= dna.unique_enzymes
-		id_card.fingerprint_hash= md5(dna.uni_identity)
+//		id_card.fingerprint_hash= md5(dna.uni_identity)
 	id_card.update_name()
 
 /mob/living/carbon/human/set_id_info(var/obj/item/weapon/card/id/id_card)
@@ -187,23 +183,23 @@ var/const/NO_EMAG_ACT = -50
 	dat += text("Sex: []</A><BR>\n", sex)
 	dat += text("Age: []</A><BR>\n", age)
 
-	if(GLOB.using_map.flags & MAP_HAS_BRANCH)
-		dat += text("Branch: []</A><BR>\n", military_branch ? military_branch.name : "\[UNSET\]")
-	if(GLOB.using_map.flags & MAP_HAS_RANK)
-		dat += text("Rank: []</A><BR>\n", military_rank ? military_rank.name : "\[UNSET\]")
+//	if(GLOB.using_map.flags & MAP_HAS_BRANCH)
+//		dat += text("Branch: []</A><BR>\n", military_branch ? military_branch.name : "\[UNSET\]")
+//	if(GLOB.using_map.flags & MAP_HAS_RANK)
+//		dat += text("Rank: []</A><BR>\n", military_rank ? military_rank.name : "\[UNSET\]")
 
 	dat += text("Assignment: []</A><BR>\n", assignment)
-	dat += text("Fingerprint: []</A><BR>\n", fingerprint_hash)
+//	dat += text("Fingerprints: []</A><BR>\n", fingerprint_hash)
 	dat += text("Blood Type: []<BR>\n", blood_type)
-	dat += text("DNA Hash: []<BR><BR>\n", dna_hash)
-	if(front && side)
-		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"
-	dat += "</tr></table>"
+//	dat += text("DNA Hash: []<BR><BR>\n", dna_hash)
+//	if(front && side)
+//		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"
+//	dat += "</tr></table>"
 	return jointext(dat,null)
 
 /obj/item/weapon/card/id/attack_self(mob/user as mob)
-	user.visible_message("\The [user] shows you: \icon[src] [src.name]. The assignment on the card: [src.assignment]",\
-		"You flash your ID card: \icon[src] [src.name]. The assignment on the card: [src.assignment]")
+	user.visible_message("\The [user] shows you: \icon[src] [src.name]. The assignment on the ID tags: [src.assignment]",\
+		"You flash your ID tags: \icon[src] [src.name]. The assignment on the tags: [src.assignment]")
 
 	src.add_fingerprint(user)
 	return
@@ -215,14 +211,14 @@ var/const/NO_EMAG_ACT = -50
 	return src
 
 /obj/item/weapon/card/id/verb/read()
-	set name = "Read ID Card"
+	set name = "Read ID Tags"
 	set category = "Object"
 	set src in usr
 
 	to_chat(usr, text("\icon[] []: The current assignment on the card is [].", src, src.name, src.assignment))
 	to_chat(usr, "The blood type on the card is [blood_type].")
-	to_chat(usr, "The DNA hash on the card is [dna_hash].")
-	to_chat(usr, "The fingerprint hash on the card is [fingerprint_hash].")
+//	to_chat(usr, "The DNA hash on the card is [dna_hash].")
+//	to_chat(usr, "The fingerprint hash on the card is [fingerprint_hash].")
 	return
 
 /obj/item/weapon/card/id/silver
@@ -430,3 +426,31 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A card issued to Merchants, indicating their right to sell and buy goods."
 	icon_state = "trader"
 	access = list(access_merchant)
+
+obj/item/weapon/card/id/wwi
+	icon = 'icons/FoF/misc.dmi'
+	name = "dog tags"
+	w_class = ITEM_SIZE_SMALL
+	desc = "Identification tags that show what rank and position you are."
+
+obj/item/weapon/card/id/wwi/brittin
+	icon_state = "brit_idtin"
+
+obj/item/weapon/card/id/wwi/britbrass
+	icon_state = "brit_idbrass"
+
+obj/item/weapon/card/id/wwi/britgold
+	icon_state = "brit_idgold"
+
+obj/item/weapon/card/id/wwi/frenchtin
+	icon_state = "fren_idtin"
+obj/item/weapon/card/id/wwi/frenchbrass
+	icon_state = "fren_idbrass"
+obj/item/weapon/card/id/wwi/frenchgold
+	icon_state = "fren_idgold"
+obj/item/weapon/card/id/wwi/germantin
+	icon_state = "germ_idtin"
+obj/item/weapon/card/id/wwi/germanbrass
+	icon_state = "germ_idbrass"
+obj/item/weapon/card/id/wwi/germangold
+	icon_state = "germ_idgold"

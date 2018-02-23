@@ -27,3 +27,14 @@
 	desc = "These look pretty fancy."
 	icon_state = "latex"
 	item_state = "lgloves"
+
+obj/item/clothing/gloves/watch
+	name = "\improper wrist watch"
+	desc = "Some genius decided a watch could go on their wrist instead of in their pocket."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "watch"
+
+obj/item/clothing/gloves/watch/examine(mob/user)
+	. = ..(user, 1)
+	if(.)
+		to_chat(user, "The time is [stationtime2text()].")

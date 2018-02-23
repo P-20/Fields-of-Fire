@@ -446,3 +446,10 @@
 /obj/item/weapon/paper/exodus_holodeck
 	name = "holodeck disclaimer"
 	info = "Bruises sustained in the holodeck can be healed simply by sleeping."
+
+/obj/item/weapon/paper/trench
+	icon = 'icons/FoF/misc.dmi'
+
+/obj/item/weapon/paper/trench/blank
+	name = "blank piece of paper"
+	desc = "It's a piece of paper."

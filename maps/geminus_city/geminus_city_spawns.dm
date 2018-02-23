@@ -1,18 +1,18 @@
 
 GLOBAL_LIST_EMPTY(colony_spawns)
 
-/datum/spawnpoint/colonist
+/datum/spawnpoint/tester
 	display_name = "Colony Arrival Shuttle"
-	restrict_job = list("Colonist","Colonist - Insurrectionist Sympathiser","Colonist - Insurrectionist Recruiter","Mayor","GCPD Officer")
+	restrict_job = list("Tester")
 
-/datum/spawnpoint/colonist/New()
+/datum/spawnpoint/tester/New()
 	..()
 	turfs = GLOB.colony_spawns
 
-/obj/effect/landmark/start/colonist
+/obj/effect/landmark/start/wwi
 	name = "Colonist"
 
-/obj/effect/landmark/start/colonist/New()
+/obj/effect/landmark/start/wwi/New()
 	..()
 	GLOB.colony_spawns += loc
 
@@ -25,8 +25,8 @@ GLOBAL_LIST_EMPTY(colony_spawns)
 /obj/effect/landmark/start/colonist/mayor
 	name = "Mayor"
 
-/obj/effect/landmark/start/colonist/police
-	name = "GCPD Officer"
+/obj/effect/landmark/start/wwi/tester
+	name = "Tester"
 
 //UNSC Landmarks + datums//
 

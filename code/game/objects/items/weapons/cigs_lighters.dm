@@ -72,12 +72,18 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/weapon/flame/match/proc/burn_out()
 	lit = 0
 	burnt = 1
+	set_light(0)
 	damtype = "brute"
 	icon_state = "match_burnt"
 	item_state = "cigoff"
 	name = "burnt match"
 	desc = "A match. This one has seen better days."
 	GLOB.processing_objects.Remove(src)
+
+/obj/item/weapon/flame/match/trench
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "match_unlit"
+	desc = "A thick match for letting snipers know where you are at night."
 
 //////////////////
 //FINE SMOKABLES//
@@ -268,6 +274,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/smokable/cigarette/carcinomas
 	name = "dark cigarette"
 	brand = "\improper Carcinoma Angel"
+	color = "#869286"
+
+/obj/item/clothing/mask/smokable/cigarette/fundamentals
+	name = "cigarette"
+	brand = "\improper Fundamentals"
 	color = "#869286"
 
 /obj/item/clothing/mask/smokable/cigarette/professionals

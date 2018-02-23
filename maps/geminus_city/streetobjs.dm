@@ -159,3 +159,10 @@
 /obj/structure/billboard/city/New()
 	..()
 	icon_state = "welcome"
+
+/material/steel/generate_recipes()
+	recipes = list()
+
+	recipes += new/datum/stack_recipe("barbed wire coil", /obj/item/stack/barbedwire, time = 10)
+	recipes += new/datum/stack_recipe("tank trap", /obj/structure/tanktrap, 4, one_per_turf = 1, on_floor = 1, time = 20)
+

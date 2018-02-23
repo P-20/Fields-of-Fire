@@ -44,3 +44,17 @@
 			src.held = O
 		return
 	..()
+
+/obj/item/clothing/accessory/locket/watch
+	icon = 'icons/FoF/misc.dmi'
+	w_class = ITEM_SIZE_TINY
+	name = "pocket watch"
+	desc = "A small pocket watch. It looks like a picture might fit in here."
+
+/obj/item/clothing/accessory/locket/watch/examine(mob/user)
+	. = ..(user, 1)
+	if(open)
+		to_chat(user, "The time is [stationtime2text()].")
+	else
+		to_chat(usr, "You have to open the watch to check the time.")
+		return

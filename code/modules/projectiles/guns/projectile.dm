@@ -218,10 +218,10 @@
 	if(is_jammed)
 		to_chat(user, "<span class='warning'>It looks jammed.</span>")
 	if(ammo_magazine)
-		to_chat(user, "It has \a [ammo_magazine] loaded.")
-	to_chat(user, "Has [getAmmo()] round\s remaining.")
+		to_chat(user, "It has a [ammo_magazine] loaded.")
+	//to_chat(user, "Has [getAmmo()] round\s remaining.")
 	return
-
+/*
 /obj/item/weapon/gun/projectile/proc/getAmmo()
 	var/bullets = 0
 	if(loaded)
@@ -231,7 +231,7 @@
 	if(chambered)
 		bullets += 1
 	return bullets
-
+*/
 /* Unneeded -- so far.
 //in case the weapon has firemodes and can't unload using attack_hand()
 /obj/item/weapon/gun/projectile/verb/unload_gun()

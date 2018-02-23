@@ -326,6 +326,7 @@ obj/item/ammo_magazine/c9mm/empty
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	max_ammo = 6
 	multiple_sprites = 1
+	desc = "A speedloader for quickly loading the Webley."
 
 /obj/item/ammo_magazine/a445/empty
 	initial_ammo = 0
@@ -341,4 +342,44 @@ obj/item/ammo_magazine/c9mm/empty
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/g792/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/smle_strip
+	name = ".303 stripper clip"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "stripclip"
+	caliber = "a303"
+	ammo_type = /obj/item/ammo_casing/a303
+	matter = list(DEFAULT_WALL_MATERIAL = 1250)
+	max_ammo = 5
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/smle_strip/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/smle_mag
+	name = "SMLE magazine"
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "smlemag"
+	caliber = "a303"
+	ammo_type = /obj/item/ammo_casing/a303
+	matter = list(DEFAULT_WALL_MATERIAL = 1250)
+	max_ammo = 10
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/smle_mag/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/a45
+	name = ".45 ACP magazine"
+	icon_state = "coltmag"
+	icon = 'icons/FoF/munitions.dmi'
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/a45
+	matter = list(DEFAULT_WALL_MATERIAL = 525)
+	caliber = "45"
+	max_ammo = 7
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/a45/empty
 	initial_ammo = 0

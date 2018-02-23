@@ -53,7 +53,7 @@
 	if(military_branch && (GLOB.using_map.flags & MAP_HAS_RANK))
 		entries[++entries.len] = list("name" = "Rank",			"value" = military_rank ? military_rank.name : "N/A")
 	entries[++entries.len] = list("name" = "Blood Type",		"value" = blood_type)
-	entries[++entries.len] = list("name" = "DNA Hash", 			"value" = dna_hash)
+//	entries[++entries.len] = list("name" = "DNA Hash", 			"value" = dna_hash)
 	entries[++entries.len] = list("name" = "Fingerprint Hash",	"value" = fingerprint_hash)
 	entries[++entries.len] = list("name" = "Name", 				"value" = registered_name)
 	entries[++entries.len] = list("name" = "Photo", 			"value" = "Update")
@@ -132,6 +132,7 @@
 					src.blood_type = new_blood_type
 					to_chat(user, "<span class='notice'>Blood type changed to '[new_blood_type]'.</span>")
 					. = 1
+					/*
 			if("DNA Hash")
 				var/default = dna_hash
 				if(default == initial(dna_hash) && ishuman(user))
@@ -154,6 +155,7 @@
 					src.fingerprint_hash = new_fingerprint_hash
 					to_chat(user, "<span class='notice'>Fingerprint hash changed to '[new_fingerprint_hash]'.</span>")
 					. = 1
+					*/
 			if("Name")
 				var/new_name = sanitizeName(input(user,"What name would you like to put on this card?","Agent Card Name", registered_name) as null|text, allow_numbers=TRUE)
 				if(!isnull(new_name) && CanUseTopic(user, state))
@@ -161,10 +163,12 @@
 					update_name()
 					to_chat(user, "<span class='notice'>Name changed to '[new_name]'.</span>")
 					. = 1
+					/*
 			if("Photo")
 				set_id_photo(user)
 				to_chat(user, "<span class='notice'>Photo changed.</span>")
 				. = 1
+				*/
 			if("Sex")
 				var/new_sex = sanitize(input(user,"What sex would you like to put on this card?","Agent Card Sex", sex) as null|text)
 				if(!isnull(new_sex) && CanUseTopic(user, state))
@@ -177,7 +181,7 @@
 					access = syndicate_access.Copy()
 					assignment = initial(assignment)
 					blood_type = initial(blood_type)
-					dna_hash = initial(dna_hash)
+//					dna_hash = initial(dna_hash)
 					electronic_warfare = initial(electronic_warfare)
 					fingerprint_hash = initial(fingerprint_hash)
 					icon_state = initial(icon_state)

@@ -1,3 +1,5 @@
+
+
 /obj/item/clothing/accessory/storage
 	name = "load bearing equipment"
 	desc = "Used to hold things when you don't have enough hands."

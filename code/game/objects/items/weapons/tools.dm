@@ -74,7 +74,7 @@ obj/item/weapon/wrench/trench
 	slot_flags = SLOT_BELT
 
 /obj/item/weapon/screwdriver/opener
-	name = "can opener"
+	name = "bottle opener"
 	desc = "A bottle opener that doubles as a screwdriver in a pinch."
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "opener"

@@ -57,8 +57,24 @@
 			new /obj/item/stack/material/steel(src.loc)
 		qdel(src)
 
+/obj/structure/tanktrap/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/weldingtool/trench))
+		var/obj/item/weapon/weldingtool/WT = W
+		if(do_after(user, 20) && WT.remove_fuel(3, user))
+			user.visible_message("<span class='info'>You salvage the tank trap.</span>")
+			new /obj/item/stack/material/steel(src.loc)
+			new /obj/item/stack/material/steel(src.loc)
+			new /obj/item/stack/material/steel(src.loc)
+			new /obj/item/stack/material/steel(src.loc)
+			qdel(src)
+		else
+			to_chat(user, "<span class='warning'>There is not enough fuel to salvage the tank trap!</span>")
+	else
+		..()
+
+
 /obj/structure/tanktrap_dead/attackby(obj/item/weapon/W as obj, mob/user as mob)
-	if(istype(W, /obj/item/weapon/weldingtool))
+	if(istype(W, /obj/item/weapon/weldingtool/trench))
 		var/obj/item/weapon/weldingtool/WT = W
 		if(do_after(user, 20) && WT.remove_fuel(3, user))
 			user.visible_message("<span class='info'>You salvage the tank trap.</span>")
@@ -70,6 +86,26 @@
 			to_chat(user, "<span class='warning'>There is not enough fuel to salvage the tank trap!</span>")
 	else
 		..()
+
+/obj/structure/tanktrap/attackby(obj/item/I as obj, mob/user as mob)
+	. = 1
+
+	if(!I || !user)
+		return 0
+
+	if(istype(I, /obj/item/weapon/crowbar/trench))
+		user.visible_message("<span class='notice'>[user] starts prying apart the [src]...</span>",\
+			"<span class='notice'>You start deconstructing [src]...</span>")
+		spawn(0)
+			if(do_after(user, 15) && src && src.loc)
+				new /obj/item/stack/material/steel(src.loc)
+				new /obj/item/stack/material/steel(src.loc)
+				new /obj/item/stack/material/steel(src.loc)
+				new /obj/item/stack/material/steel(src.loc)
+				qdel(src)
+		return 1
+	else
+		return ..()
 
 /obj/structure/tanktrap_dead
 	name = "tanktrap"

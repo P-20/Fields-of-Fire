@@ -223,6 +223,7 @@
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 250)
+	randpixel = 8
 
 /obj/item/ammo_casing/a303
 	desc = "A .303 British casing."
@@ -232,6 +233,7 @@
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
+	randpixel = 8
 
 /obj/item/ammo_casing/c8mm
 	desc = "An 8mm casing."
@@ -241,6 +243,7 @@
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
+	randpixel = 8
 
 /obj/item/ammo_casing/c32acp
 	desc = "A .32 ACP casing."
@@ -259,6 +262,7 @@
 	icon_state = "pbullet"
 	spent_icon = "r-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 60)
+	randpixel = 8
 
 /obj/item/ammo_casing/a455
 	desc = "A .455 casing."
@@ -268,3 +272,24 @@
 	icon_state = "pbullet"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 250)
+	randpixel = 8
+
+/obj/item/ammo_casing/a3030
+	desc = "A .30-30 Winchester casing."
+	caliber = "a3030"
+	projectile_type = /obj/item/projectile/bullet/rifle/a3030
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "looseriflerounds_1"
+	spent_icon = "rifle-casing-spent"
+	matter = list(DEFAULT_WALL_MATERIAL = 350)
+	randpixel = 8
+
+/obj/item/ammo_casing/a45
+	desc = "A .45 ACP casing."
+	caliber = "45"
+	projectile_type = /obj/item/projectile/bullet/pistol/a45
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "pbullet"
+	spent_icon = "r-casing-spent"
+	matter = list(DEFAULT_WALL_MATERIAL = 75)
+	randpixel = 8

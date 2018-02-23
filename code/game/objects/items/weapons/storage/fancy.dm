@@ -123,7 +123,7 @@
 	item_state = "cigpacket"
 	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_TINY
-	max_storage_space = 6
+	max_storage_space = 10
 	throwforce = 2
 	slot_flags = SLOT_BELT
 
@@ -205,6 +205,14 @@
 	icon_state = "Jpacket"
 	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/jerichos = 6)
+
+/obj/item/weapon/storage/fancy/cigarettes/fundamentals
+	name = "pack of Fundamentals"
+	desc = "This pack of cigarettes came all the way from Britain. Has a peculiarly rugged taste."
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "Zpacket"
+	item_state = "Zpacket"
+	startswith = list(/obj/item/clothing/mask/smokable/cigarette/fundamentals = 10)
 
 /obj/item/weapon/storage/fancy/cigarettes/menthols
 	name = "pack of Temperamento Menthols"

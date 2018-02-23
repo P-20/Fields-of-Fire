@@ -102,3 +102,49 @@
 	new /obj/item/weapon/gun/projectile/m6c_magnum_s(src)
 	new /obj/item/clothing/accessory/holster/thigh(src)
 	return
+
+/obj/item/weapon/coin/req
+	icon = 'icons/FoF/misc.dmi'
+	name = "Requisition Receipt"
+	desc = "Insert this voucher into the dispensor to recieve a loadout."
+	icon_state = "paper_words"
+
+/obj/item/wwi/transit
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "lettercase_f"
+	name = "Transportation Receipt"
+	desc = "A voucher used to board the train and go to war. Make sure you have everything before using this."
+	w_class = ITEM_SIZE_TINY
+	var/teleport = 1
+
+/obj/item/wwi/transit/attack_self(mob/user as mob)
+	if(!ismob(user))
+		user.forceMove(src)
+	if(teleport)
+		user.forceMove(/obj/effect/landmark/wakeup in world)
+	qdel(src)
+
+
+/obj/effect/landmark/wakeup
+	name = "Test Wake Up Point"
+	invisibility = 101
+
+/obj/item/device/whistle
+	name = "whistle"
+	desc = "Used by officers to send their soldiers into yet another reckless assault. Tell your chaplain to prepare coffins before using this."
+	icon_state = "whistle"
+	item_state = "flashbang"	//looks exactly like a flash (and nothing like a flashbang)
+	w_class = 1.0
+	flags = CONDUCT
+
+	var/spamcheck = 0
+
+obj/item/device/whistle/attack_self(mob/living/carbon/user as mob)
+	if (spamcheck)
+		return
+
+	playsound(get_turf(src), 'sound/weapons/whistle.ogg', 100, 1, vary = 0)
+	user.audible_message("<span class='warning'>[user] whistles into his [name]! OVER THE TOP, BOYS!</span>")
+	spamcheck = 1
+	spawn(50)
+		spamcheck = 0
