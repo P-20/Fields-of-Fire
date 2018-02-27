@@ -174,3 +174,40 @@
 
 /turf/simulated/wall/tech/New(var/newloc)
 	..(newloc,"blackchrome")
+
+turf/simulated/wall/wwi
+	icon = 'icons/FoF/oldconcrete.dmi'
+	name = "conrete wall"
+	desc = "Nothing like the warm embrace of poured concrete."
+	density = 1
+
+turf/simulated/wall/wwi/bunker/toprightcorner
+	icon_state = "concretecorner1"
+turf/simulated/wall/wwi/bunker/topleftcorner
+	icon_state = "concretecorner3"
+turf/simulated/wall/wwi/bunker/bottomrightcorner
+	icon_state = "concretecorner2"
+turf/simulated/wall/wwi/bunker/bottomleftcorner
+	icon_state = "concretecorner4"
+turf/simulated/wall/wwi/bunker/intersectiondown
+	icon_state = "concreteintersection1"
+turf/simulated/wall/wwi/bunker/intersectionup
+	icon_state = "concreteintersection2"
+turf/simulated/wall/wwi/bunker/intersectionleft
+	icon_state = "concreteintersection3"
+turf/simulated/wall/wwi/bunker/intersectionright
+	icon_state = "concreteintersection4"
+turf/simulated/wall/wwi/bunker/plus
+	icon_state = "concreteplus"
+turf/simulated/wall/wwi/bunker/horizontal
+	icon_state = "concretesegment1"
+turf/simulated/wall/wwi/bunker/vertical
+	icon_state = "concretesegment2"
+turf/simulated/wall/wwi/bunker/rightend
+	icon_state = "concreteend2"
+turf/simulated/wall/wwi/bunker/leftend
+	icon_state = "concreteend1"
+turf/simulated/wall/wwi/bunker/topend
+	icon_state = "concreteend4"
+turf/simulated/wall/wwi/bunker/bottomend
+	icon_state = "concreteend3"

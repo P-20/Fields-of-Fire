@@ -456,6 +456,8 @@
 /obj/item/weapon/gun/projectile/wwi/bolt
 	var/recentbolt = 0
 	handle_casings = HOLD_CASINGS
+	one_hand_penalty = 6
+	accuracy = 1
 
 /obj/item/weapon/gun/projectile/wwi/bolt/consume_next_projectile()
 	if(chambered)
@@ -513,7 +515,6 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	caliber = "a792"
 	fire_sound = 'sound/weapons/g98.ogg'
 	max_shells = 4
-	accuracy = 1
 	w_class = ITEM_SIZE_HUGE
 	ammo_type = /obj/item/ammo_casing/a792
 
@@ -541,7 +542,6 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK
-	accuracy = 1
 
 /obj/item/weapon/gun/projectile/wwi/bolt/smle
 	name = "\improper Lee-Enfield"
@@ -578,6 +578,7 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 /obj/item/weapon/gun/projectile/wwi/lever
 	var/leveruse = 0
 	handle_casings = HOLD_CASINGS
+	one_hand_penalty = 6
 
 /obj/item/weapon/gun/projectile/wwi/lever/consume_next_projectile()
 	if(chambered)

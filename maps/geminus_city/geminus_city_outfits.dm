@@ -80,14 +80,16 @@
 
 	flags = 0
 
-/decl/hierarchy/outfit/job/tester
-	name = "Tester"
+/decl/hierarchy/outfit/job/tester/brit
+	name = "British Tester"
 
 	uniform = /obj/item/clothing/under/wwi/brit
 	shoes = /obj/item/clothing/shoes/british
-	belt = /obj/item/weapon/gun/projectile/wwi/mauser
+	belt = /obj/item/weapon/gun/projectile/revolver/webley
 	suit = /obj/item/clothing/suit/storage/wwi/britishcoat
 	id_type = /obj/item/weapon/card/id/wwi/brittin
+	l_pocket = /obj/item/weapon/storage/box/letter/brit
+	l_ear = null
 
 	flags = 0
 
@@ -105,7 +107,25 @@
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
 
-/decl/hierarchy/outfit/job/tester/equip_id(mob/living/carbon/human/H)
+/decl/hierarchy/outfit/job/tester/brit/equip_id(mob/living/carbon/human/H)
 	var/obj/item/weapon/card/id/wwi/brittin/C = ..()
-	C.assignment = "Tester"
+	C.assignment = "British Tester"
+	H.set_id_info(C)
+
+/decl/hierarchy/outfit/job/tester/germ
+	name = "German Tester"
+
+	uniform = /obj/item/clothing/under/wwi/german
+	shoes = /obj/item/clothing/shoes/german
+	belt = /obj/item/weapon/gun/projectile/wwi/p08
+	suit = /obj/item/clothing/suit/storage/wwi/germancoat
+	id_type = /obj/item/weapon/card/id/wwi/germantin
+	l_pocket = /obj/item/weapon/storage/box/letter/german
+	l_ear = null
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/tester/germ/equip_id(mob/living/carbon/human/H)
+	var/obj/item/weapon/card/id/wwi/germantin/C = ..()
+	C.assignment = "German Tester"
 	H.set_id_info(C)

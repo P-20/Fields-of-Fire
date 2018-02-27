@@ -25,8 +25,11 @@ GLOBAL_LIST_EMPTY(colony_spawns)
 /obj/effect/landmark/start/colonist/mayor
 	name = "Mayor"
 
-/obj/effect/landmark/start/wwi/tester
-	name = "Tester"
+/obj/effect/landmark/start/wwi/tester/brit
+	name = "British Tester"
+
+/obj/effect/landmark/start/wwi/tester/germ
+	name = "German Tester"
 
 //UNSC Landmarks + datums//
 

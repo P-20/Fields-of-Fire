@@ -106,7 +106,7 @@
 /obj/item/weapon/coin/req
 	icon = 'icons/FoF/misc.dmi'
 	name = "Requisition Receipt"
-	desc = "Insert this voucher into the dispensor to recieve a loadout."
+	desc = "Insert this voucher into the dispenser to recieve a loadout."
 	icon_state = "paper_words"
 
 /obj/item/wwi/transit
@@ -115,19 +115,58 @@
 	name = "Transportation Receipt"
 	desc = "A voucher used to board the train and go to war. Make sure you have everything before using this."
 	w_class = ITEM_SIZE_TINY
-	var/teleport = 1
+	var/teleport
+	var/turf/teleport_spot
+
+/obj/item/wwi/transit/proc/search_compatible_points()
+	var/list/valid_points = list()
+	for(var/obj/effect/landmark/wakeup/t in world)
+		valid_points += t
+	teleport_spot = pick(valid_points)
+
+/obj/item/wwi/transit/proc/calculate_point()
+	var/list/valid_points = list()
+	if(!teleport_spot)
+		search_compatible_points()
+	for(var/turf/t in view(teleport_spot,2))
+		if(istype(t,/turf/simulated/floor))
+			valid_points += t
+		if(istype(t,/turf/unsimulated/floor))
+			valid_points += t
+	if(isnull(valid_points))
+		return
+	return pick(valid_points)
 
 /obj/item/wwi/transit/attack_self(mob/user as mob)
-	if(!ismob(user))
-		user.forceMove(src)
+	teleport_spot = calculate_point()
+	teleport = 1
 	if(teleport)
-		user.forceMove(/obj/effect/landmark/wakeup in world)
+		user.forceMove(teleport_spot)
 	qdel(src)
 
+/obj/item/wwi/transit/brit
+
+/obj/item/wwi/transit/brit/search_compatible_points()
+	var/list/valid_points = list()
+	for(var/obj/effect/landmark/wakeup/brit/t in world)
+		valid_points += t
+	teleport_spot = pick(valid_points)
+
+/obj/item/wwi/transit/german
+
+/obj/item/wwi/transit/german/search_compatible_points()
+	var/list/valid_points = list()
+	for(var/obj/effect/landmark/wakeup/german/t in world)
+		valid_points += t
+	teleport_spot = pick(valid_points)
 
 /obj/effect/landmark/wakeup
-	name = "Test Wake Up Point"
+	name = "Wake Up Point"
 	invisibility = 101
+
+/obj/effect/landmark/wakeup/german
+
+/obj/effect/landmark/wakeup/brit
 
 /obj/item/device/whistle
 	name = "whistle"

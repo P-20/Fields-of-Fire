@@ -481,4 +481,21 @@
 	name = "Receipts"
 	desc = "The letter they gave you with your tags. Contains a Requisition Receipt and Transportation Receipt. Don't use the Transportation Receipt until you've gotten your gear with the Requisition Receipt."
 	max_storage_space = 2
-	startswith = list(/obj/item/weapon/coin/req = 1)
+	w_class = ITEM_SIZE_TINY
+
+/obj/item/weapon/storage/box/letter/brit
+	startswith = list(/obj/item/weapon/coin/req = 1,/obj/item/wwi/transit/brit = 1)
+
+/obj/item/weapon/storage/box/letter/german
+	startswith = list(/obj/item/weapon/coin/req = 1,/obj/item/wwi/transit/german = 1)
+
+/obj/item/weapon/storage/box/wwi
+	icon = 'icons/FoF/misc.dmi'
+	can_hold = list(/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/clothing,/obj/item/weapon/melee/combat_knife)
+	w_class = ITEM_SIZE_HUGE
+
+/obj/item/weapon/storage/box/wwi/germ
+	icon_state = "flatcrate"
+
+/obj/item/weapon/storage/box/wwi/brit
+	icon_state = "lightflatcrate"

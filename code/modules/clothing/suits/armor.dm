@@ -454,6 +454,7 @@
 
 /obj/item/clothing/suit/storage/wwi
 	icon = 'icons/FoF/clothes.dmi'
+	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
 
 /obj/item/clothing/suit/storage/wwi/germancoat
 	icon_override = MOB_OVERRIDE
@@ -469,7 +470,6 @@
 	icon_state = "germtrench"
 	item_state = "germtrench"
 	blood_overlay_type = "coat"
-	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
 
 /obj/item/clothing/suit/storage/wwi/britishcoat
 	icon_override = MOB_OVERRIDE
@@ -485,7 +485,6 @@
 	icon_state = "britttrench"
 	item_state = "britttrench"
 	blood_overlay_type = "coat"
-	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
 
 /obj/item/clothing/suit/storage/wwi/frenchcoat
 	icon_override = MOB_OVERRIDE
@@ -501,7 +500,6 @@
 	icon_state = "frenchtrench"
 	item_state = "frenchtrench"
 	blood_overlay_type = "coat"
-	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
 
 /obj/item/clothing/shoes/german
 	name = "German boots"
