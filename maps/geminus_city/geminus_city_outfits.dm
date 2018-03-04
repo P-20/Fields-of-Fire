@@ -85,11 +85,11 @@
 
 	uniform = /obj/item/clothing/under/wwi/brit
 	shoes = /obj/item/clothing/shoes/british
-	belt = /obj/item/weapon/gun/projectile/revolver/webley
-	suit = /obj/item/clothing/suit/storage/wwi/britishcoat
 	id_type = /obj/item/weapon/card/id/wwi/brittin
 	l_pocket = /obj/item/weapon/storage/box/letter/brit
 	l_ear = null
+	belt = null
+	pda_slot = null
 
 	flags = 0
 

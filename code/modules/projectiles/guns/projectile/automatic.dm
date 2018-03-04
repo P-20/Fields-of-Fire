@@ -291,14 +291,14 @@
 
 /obj/item/weapon/gun/projectile/wwi/mg08
 	name = "\improper MG 08-15"
-	desc = "A lightened and thus more portable version of the original german MG 08 heavy machinegun. Supports 50-round drum feed system. Uses 7.92mm ammo."
+	desc = "A lightened and thus more portable version of the original german MG08 heavy machinegun. Supports 50-round drum feed system. Uses 7.92mm ammo."
 	icon_state = "mg08"
 	item_state = "mg08_w"
 	caliber = "a792"
 	slot_flags = 0
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	load_method = MAGAZINE
-	ammo_type = /obj/item/ammo_casing/a792
+	ammo_type = /obj/item/ammo_casing/a792 || /obj/item/ammo_casing/a792hp
 	magazine_type = /obj/item/ammo_magazine/box/a792
 	allowed_magazines = /obj/item/ammo_magazine/box/a792
 	one_hand_penalty = -1
@@ -324,11 +324,11 @@
 
 /obj/item/weapon/gun/projectile/wwi/lewis
 	name = "\improper Lewis gun"
-	desc = "A British light machine gun, known by its distinctive barrel cooling shroud and top mounted 47-round pan magazine. Uses .303 British ammo."
+	desc = "An offshoot of the British machine gun, known by its distinctive barrel cooling shroud and top mounted 47-round pan magazine. Uses .303 British ammo."
 	icon_state = "lewis"
 	item_state = "mg08_w"
 	caliber = "a303"
-	ammo_type = /obj/item/ammo_casing/a303
+	ammo_type = /obj/item/ammo_casing/a303 || /obj/item/ammo_casing/a303hp
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	magazine_type = /obj/item/ammo_magazine/box/mp303
 	one_hand_penalty = -1
@@ -360,7 +360,7 @@
 	icon_state = "chauchat"
 	item_state = "chauchat"
 	caliber = "8mm"
-	ammo_type = /obj/item/ammo_casing/c8mm
+	ammo_type = /obj/item/ammo_casing/c8mm || /obj/item/ammo_casing/c8mmhp
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	magazine_type = /obj/item/ammo_magazine/box/c8mm
 	one_hand_penalty = 6
@@ -516,7 +516,7 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	fire_sound = 'sound/weapons/g98.ogg'
 	max_shells = 4
 	w_class = ITEM_SIZE_HUGE
-	ammo_type = /obj/item/ammo_casing/a792
+	ammo_type = /obj/item/ammo_casing/a792 || /obj/item/ammo_casing/a792hp
 
 /obj/item/weapon/gun/projectile/wwi/bolt/g98rifle/scoped
 	name = "\improper G98 scoped rifle"
@@ -538,7 +538,7 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	caliber = "8mm"
 	fire_sound = 'sound/weapons/lebel.ogg'
 	max_shells = 7
-	ammo_type = /obj/item/ammo_casing/c8mm
+	ammo_type = /obj/item/ammo_casing/c8mm || /obj/item/ammo_casing/c8mmhp
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK
@@ -552,7 +552,7 @@ obj/item/weapon/gun/projectile/wwi/bolt/proc/bolt(mob/M as mob)
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 5
 	caliber = "a303"
-	ammo_type = /obj/item/ammo_casing/a303
+	ammo_type = /obj/item/ammo_casing/a303 || /obj/item/ammo_casing/a303hp
 
 /obj/item/weapon/gun/projectile/wwi/bolt/smle/update_icon()
 	..()
@@ -635,7 +635,7 @@ obj/item/weapon/gun/projectile/wwi/lever/proc/lever(mob/M as mob)
 	ammo_type = /obj/item/ammo_casing/a3030
 
 /obj/item/weapon/gun/projectile/wwi/lever/winchester/attackby(var/obj/item/A as obj, mob/user as mob)
-	if(w_class > 3 && (istype(A, /obj/item/weapon/circular_saw) || istype(A, /obj/item/weapon/melee/energy) || istype(A, /obj/item/weapon/pickaxe/plasmacutter)))
+	if(w_class > 3 && (istype(A, /obj/item/weapon/circular_saw)))
 		to_chat(user, "<span class='notice'>You begin to shorten \the [src].</span>")
 		if(do_after(user, 30, src))	//SHIT IS STEALTHY EYYYYY
 			icon_state = "winch_sawed"

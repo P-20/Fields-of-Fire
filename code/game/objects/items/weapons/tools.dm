@@ -37,7 +37,7 @@ obj/item/weapon/wrench/trench
 	icon = 'icons/FoF/tools_ww1.dmi'
 	icon_state = "ww1_multitool-wrench"
 	desc = "A heavy wrench coated in rust. A small wheel near the head allows for size adjustment."
-	force = 20
+	force = 15
 	throwforce = 10
 	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
 	w_class = ITEM_SIZE_NORMAL
@@ -453,7 +453,7 @@ obj/item/weapon/crowbar/trench
 	icon_state = "ww1_multitool-crowbar"
 	name = "crowbar"
 	desc = "A rusty crowbar with a menacing hooked end."
-	force = 20
+	force = 15
 	throwforce = 10
 	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
 	w_class = ITEM_SIZE_NORMAL

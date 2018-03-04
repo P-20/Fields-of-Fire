@@ -87,6 +87,7 @@
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 	caliber = "shotgun"
+	randpixel = 8
 
 /obj/item/ammo_casing/shotgun/pellet
 	name = "shotgun shell"
@@ -216,13 +217,28 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 260, "uranium" = 200)
 
 /obj/item/ammo_casing/a792
-	desc = "A 7.92mm bullet casing."
+	desc = "A 7.92mm casing."
 	caliber = "a792"
 	projectile_type = /obj/item/projectile/bullet/rifle/a792
 	icon = 'icons/FoF/munitions.dmi'
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 250)
+	randpixel = 8
+
+/obj/item/ammo_casing/a792/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(istype(A,/obj/item/weapon/melee/combat_knife))
+		to_chat(user, "You hollow out the tip of the round with the trench knife.")
+		user.put_in_hands(new /obj/item/ammo_casing/a792hp(user.loc))
+		qdel(src)
+
+/obj/item/ammo_casing/a792hp
+	desc = "A 7.92mm casing. This one looks altered."
+	caliber = "a792"
+	projectile_type = /obj/item/projectile/bullet/rifle/a792/hp
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "looseriflerounds_1"
+	spent_icon = "rifle-casing-spent"
 	randpixel = 8
 
 /obj/item/ammo_casing/a303
@@ -235,6 +251,21 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
 	randpixel = 8
 
+/obj/item/ammo_casing/a303/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(istype(A,/obj/item/weapon/melee/combat_knife))
+		to_chat(user, "You hollow out the tip of the round with the trench knife.")
+		user.put_in_hands(new /obj/item/ammo_casing/a303hp(user.loc))
+		qdel(src)
+
+/obj/item/ammo_casing/a303hp
+	desc = "A .303 British casing. This one looks altered."
+	caliber = "a303"
+	projectile_type = /obj/item/projectile/bullet/rifle/a303/hp
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "looseriflerounds_1"
+	spent_icon = "rifle-casing-spent"
+	randpixel = 8
+
 /obj/item/ammo_casing/c8mm
 	desc = "An 8mm casing."
 	caliber = "8mm"
@@ -243,6 +274,21 @@
 	icon_state = "looseriflerounds_1"
 	spent_icon = "rifle-casing-spent"
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
+	randpixel = 8
+
+/obj/item/ammo_casing/c8mm/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(istype(A,/obj/item/weapon/melee/combat_knife))
+		to_chat(user, "You hollow out the tip of the round with the trench knife.")
+		user.put_in_hands(new /obj/item/ammo_casing/c8mmhp(user.loc))
+		qdel(src)
+
+/obj/item/ammo_casing/c8mmhp
+	desc = "An 8mm casing. This one looks altered."
+	caliber = "8mm"
+	projectile_type = /obj/item/projectile/bullet/rifle/c8mm/hp
+	icon = 'icons/FoF/munitions.dmi'
+	icon_state = "looseriflerounds_1"
+	spent_icon = "rifle-casing-spent"
 	randpixel = 8
 
 /obj/item/ammo_casing/c32acp

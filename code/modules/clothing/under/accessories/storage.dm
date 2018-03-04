@@ -1,4 +1,4 @@
-
+#define WWI_OVERRIDE 'icons/FoF/clothes.dmi'
 
 /obj/item/clothing/accessory/storage
 	name = "load bearing equipment"
@@ -145,3 +145,19 @@
 		/obj/item/ammo_magazine
 	)
 
+/obj/item/clothing/accessory/storage/wwi
+	name = "webbing"
+	desc = "Pouches and straps that loop around your body to carry things in."
+	icon = WWI_OVERRIDE
+	slots = 4
+
+/obj/item/clothing/accessory/storage/wwi/brit
+	icon_state = "brittvest"
+
+/obj/item/clothing/accessory/storage/wwi/french
+	icon_state = "frenchvest"
+
+/obj/item/clothing/accessory/storage/wwi/germ
+	icon_state = "germvest"
+
+#undef WWI_OVERRIDE

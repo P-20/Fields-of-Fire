@@ -142,6 +142,8 @@
 	teleport = 1
 	if(teleport)
 		user.forceMove(teleport_spot)
+	user.visible_message("<span class='notice'>[user] wanders off to find the transit officer.</span>")
+	to_chat(user, "<span class='warning'>You begin to wake up from this dream...</span>")
 	qdel(src)
 
 /obj/item/wwi/transit/brit

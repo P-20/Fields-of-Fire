@@ -333,10 +333,13 @@
 		update_icon()
 
 /obj/item/weapon/reagent_containers/syringe/steroid
-	name = "Syringe (anabolic steroids)"
-	desc = "Contains drugs for muscle growth."
+	name = "Syringe (adrenaline)"
+	desc = "Some kind of adrenaline cocktail to get someone up from almost anything."
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/adrenaline,5)
-		reagents.add_reagent(/datum/reagent/hyperzine,10)
+		reagents.add_reagent(/datum/reagent/hyperzine,5)
+		reagents.add_reagent(/datum/reagent/triadrenaline,5)
+		mode = SYRINGE_INJECT
+		update_icon()
 

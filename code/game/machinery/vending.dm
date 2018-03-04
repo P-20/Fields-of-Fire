@@ -204,6 +204,7 @@
 		categories |= CAT_COIN
 		to_chat(user, "<span class='notice'>You insert \the [W] into \the [src].</span>")
 		GLOB.nanomanager.update_uis(src)
+		playsound(loc, 'sound/items/polaroid1.ogg', 50, 1)
 		return
 	else if(attempt_to_stock(W, user))
 		return
@@ -371,7 +372,7 @@
 		data["products"] = listed_products
 
 	if(src.coin)
-		data["coin"] = src.coin.name
+		data["Receipt"] = src.coin.name
 
 	if(src.panel_open)
 		data["panel"] = 1
@@ -391,9 +392,9 @@
 	if(..())
 		return
 
-	if(href_list["remove_coin"] && !istype(usr,/mob/living/silicon))
+	if(href_list["remove_receipt"] && !istype(usr,/mob/living/silicon))
 		if(!coin)
-			to_chat(usr, "There is no coin in this machine.")
+			to_chat(usr, "There is no receipt in this machine.")
 			return
 
 		coin.forceMove(src.loc)
@@ -1106,7 +1107,26 @@
 	contraband = list(/obj/item/weapon/reagent_containers/spray/waterflower = 2, /obj/item/weapon/storage/box/snappops = 3)
 
 /obj/machinery/vending/wwi
-	icon = 'icons/FoF/misc.dmi'
+	icon = 'icons/FoF/tree.dmi'
 	name = "Requisitions Vendor"
 	desc = "Insert your Requisition Receipt into the punch card slot to recieve your gear."
 	vend_delay = 21
+	icon_state = "vendor"
+
+/obj/machinery/vending/wwi/frenchstandard
+	premium = list(/obj/item/weapon/storage/box/wwi/brit/lebel = 80)
+
+/obj/machinery/vending/wwi/britstandard
+	premium = list(/obj/item/weapon/storage/box/wwi/brit/smle = 80)
+
+/obj/machinery/vending/wwi/germstandard
+	premium = list(/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle = 80)
+
+/obj/machinery/vending/wwi/frenchmedic
+	premium = list(/obj/item/weapon/storage/box/wwi/brit/frenchmed = 80)
+
+/obj/machinery/vending/wwi/britmedic
+	premium = list(/obj/item/weapon/storage/box/wwi/brit/britmed = 80)
+
+/obj/machinery/vending/wwi/germmedic
+	premium = list(/obj/item/weapon/storage/box/wwi/germ/med = 80)

@@ -68,6 +68,6 @@ obj/item/weapon/melee/hammer
 	icon = 'icons/FoF/tools_ww1.dmi'
 	icon_state = "ww1_multitool-hammer"
 	w_class = ITEM_SIZE_NORMAL
-	force = 20
+	force = 15
 	throwforce = 10
 	attack_verb = list("beaten","clubbed","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")

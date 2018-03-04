@@ -478,8 +478,8 @@
 /obj/item/weapon/storage/box/letter
 	icon = 'icons/FoF/misc.dmi'
 	icon_state = "lettercase"
-	name = "Receipts"
-	desc = "The letter they gave you with your tags. Contains a Requisition Receipt and Transportation Receipt. Don't use the Transportation Receipt until you've gotten your gear with the Requisition Receipt."
+	name = "Envelope"
+	desc = "The envelope they gave you with your tags. Contains a Requisition Receipt and Transportation Receipt. Don't use the Transportation Receipt until you've gotten your gear with the Requisition Receipt."
 	max_storage_space = 2
 	w_class = ITEM_SIZE_TINY
 
@@ -491,7 +491,7 @@
 
 /obj/item/weapon/storage/box/wwi
 	icon = 'icons/FoF/misc.dmi'
-	can_hold = list(/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/clothing,/obj/item/weapon/melee/combat_knife)
+	can_hold = list(/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/clothing,/obj/item/weapon/melee/combat_knife,/obj/item/clothing/mask/gas,/obj/item/ammo_box,/obj/item/clothing/head/helmet)
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/weapon/storage/box/wwi/germ
@@ -499,3 +499,58 @@
 
 /obj/item/weapon/storage/box/wwi/brit
 	icon_state = "lightflatcrate"
+
+/obj/item/weapon/storage/box/wwi/brit/lebel
+	name = "Lebel box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/lebel,
+					/obj/item/clothing/accessory/storage/wwi/french,
+					/obj/item/clothing/suit/storage/wwi/frenchcoat,
+					/obj/item/ammo_box/lebel, /obj/item/ammo_box/lebel,
+					/obj/item/clothing/mask/gas/wwi/french,
+					/obj/item/clothing/head/helmet/frenchsoft)
+	max_storage_space = 6
+
+/obj/item/weapon/storage/box/wwi/brit/smle
+	name = "Lee-Enfield box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/smle,
+					/obj/item/clothing/accessory/storage/wwi/brit,
+					/obj/item/clothing/suit/storage/wwi/britishcoat,
+					/obj/item/ammo_magazine/smle_strip, /obj/item/ammo_magazine/smle_strip,
+					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/clothing/head/helmet/britsoft)
+
+/obj/item/weapon/storage/box/wwi/germ/g98
+	name = "G98 box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle,
+					/obj/item/clothing/accessory/storage/wwi/germ,
+					/obj/item/clothing/suit/storage/wwi/germancoat,
+					/obj/item/ammo_magazine/g792,/obj/item/ammo_magazine/g792,
+					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/clothing/head/helmet/germansoft)
+
+/obj/item/weapon/storage/box/wwi/brit/britmed
+	name = "Medic box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/smle,
+					/obj/item/weapon/storage/belt/trenchmed,
+					/obj/item/clothing/suit/storage/wwi/britmedcoat,
+					/obj/item/ammo_magazine/smle_strip, /obj/item/ammo_magazine/smle_strip,
+					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/clothing/head/helmet/britsoft)
+
+/obj/item/weapon/storage/box/wwi/brit/frenchmed
+	name = "Medic box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/lebel,
+					/obj/item/weapon/storage/belt/trenchmed,
+					/obj/item/clothing/suit/storage/wwi/frenchmedcoat,
+					/obj/item/ammo_box/lebel, /obj/item/ammo_box/lebel,
+					/obj/item/clothing/mask/gas/wwi/french,
+					/obj/item/clothing/head/helmet/frenchsoft)
+
+/obj/item/weapon/storage/box/wwi/germ/med
+	name = "Medic box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle,
+					/obj/item/weapon/storage/belt/trenchmed,
+					/obj/item/clothing/suit/storage/wwi/germanmedcoat,
+					/obj/item/ammo_magazine/g792,/obj/item/ammo_magazine/g792,
+					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/clothing/head/helmet/germansoft)

@@ -131,19 +131,19 @@
 
 /obj/item/projectile/bullet/pistol/c32acp
 	fire_sound = 'sound/weapons/ruby.ogg'
-	damage = 20
+	damage = 10
 
 /obj/item/projectile/bullet/pistol/a45
 	fire_sound = 'sound/weapons/webley.ogg'
-	damage = 25
+	damage = 20
 
 /obj/item/projectile/bullet/pistol/c9mm
 	fire_sound = 'sound/weapons/ruby.ogg'
-	damage = 20
+	damage = 15
 
 /obj/item/projectile/bullet/pistol/a445
 	fire_sound = 'sound/weapons/webley.ogg'
-	damage = 35
+	damage = 25
 
 /obj/item/projectile/bullet/pistol/medium
 	damage = 25
@@ -197,23 +197,44 @@
 
 /obj/item/projectile/bullet/rifle/a792
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 20
+
+/obj/item/projectile/bullet/rifle/a792/hp
+	penetrating = 0
+	armor_penetration = 0
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
 	damage = 30
+	edge = 1
 
 /obj/item/projectile/bullet/rifle/a3030
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
-	damage = 40
+	damage = 30
 
 /obj/item/projectile/bullet/rifle/a303
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
-	damage = 25
+	damage = 20
+
+/obj/item/projectile/bullet/rifle/a303/hp
+	penetrating = 0
+	armor_penetration = 0
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 30
+	edge = 1
 
 /obj/item/projectile/bullet/rifle/c8mm
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
-	damage = 35
+	damage = 20
+
+/obj/item/projectile/bullet/rifle/c8mm/hp
+	penetrating = 0
+	armor_penetration = 0
+	fire_sound = 'sound/weapons/Gunshot_light.ogg'
+	damage = 30
+	edge = 1
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 25
+	damage = 15
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
@@ -228,6 +249,8 @@
 	penetrating = 5
 	armor_penetration = 80
 	hitscan = 1 //so the PTR isn't useless as a sniper weapon
+
+
 
 /* Miscellaneous */
 

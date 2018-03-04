@@ -460,7 +460,7 @@
 	icon_override = MOB_OVERRIDE
 	icon = WWI_OVERRIDE
 	name = "German trenchcoat"
-	desc = "A thick overcoat to keep you warm in the battlefield."
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets."
 	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
@@ -475,7 +475,7 @@
 	icon_override = MOB_OVERRIDE
 	icon = WWI_OVERRIDE
 	name = "British trenchcoat"
-	desc = "A thick overcoat to keep you warm in the battlefield."
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets."
 	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
@@ -490,7 +490,7 @@
 	icon_override = MOB_OVERRIDE
 	icon = WWI_OVERRIDE
 	name = "French trenchcoat"
-	desc = "A thick overcoat to keep you warm in the battlefield."
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets."
 	w_class = ITEM_SIZE_LARGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
@@ -621,6 +621,7 @@
 	icon_override = MOB_OVERRIDE
 	armor = list(melee = 0, bullet = 0, laser = 2,energy = 2, bomb = 0, bio = 90, rad = 0)
 	body_parts_covered = HEAD|FACE|EYES
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/clothing/mask/gas/wwi/french
 	name = "gas mask"
@@ -643,9 +644,53 @@
 	desc = "A mass produced gas mask. A quick and cheap counter to chemical weapons."
 	icon = WWI_OVERRIDE
 	icon_override = MOB_OVERRIDE
-	icon_state = "brittgasmask"
-	item_state = "brittgasmask"
+	icon_state = "frenchgasmask"
+	item_state = "frenchgasmask"
 
+/obj/item/clothing/suit/storage/wwi/germanmedcoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "German medical trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets. This one has the armband of a medic."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "medgermtrench"
+	item_state = "medgermtrench"
+	blood_overlay_type = "coat"
+
+/obj/item/clothing/suit/storage/wwi/frenchmedcoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "French medical trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets. This one has the armband of a medic."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "medfrenchtrench"
+	item_state = "medfrenchtrench"
+	blood_overlay_type = "coat"
+
+/obj/item/clothing/suit/storage/wwi/britmedcoat
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "British medical trenchcoat"
+	desc = "A thick overcoat to keep you warm in the battlefield. Has two interior pockets. This one has the armband of a medic."
+	w_class = ITEM_SIZE_LARGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 5, bio = 5, rad = 0)
+	siemens_coefficient = 0.5
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "medbrittsuit"
+	item_state = "medbrittsuit"
+	blood_overlay_type = "coat"
 
 #undef WWI_OVERRIDE
 #undef MOB_OVERRIDE

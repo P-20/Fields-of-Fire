@@ -213,7 +213,7 @@
 /obj/item/weapon/storage/belt/trenchmed
 	icon = 'icons/FoF/misc.dmi'
 	name = "medical satchel"
-	desc = "A red bag with a yellow cross that shows that the contents are medical in nature."
+	desc = "A red bag with a yellow cross that shows that the contents are medical in nature. Fits around your waist as well as your torso."
 	w_class = ITEM_SIZE_HUGE
 	max_w_class = ITEM_SIZE_SMALL
 	storage_slots = 4
@@ -224,5 +224,6 @@
 /obj/item/weapon/storage/belt/trenchmed/New()
 	..()
 	new /obj/item/stack/medical/bruise_pack/trench(src)
-	new /obj/item/stack/medical/bruise_pack/trench(src)
 	new /obj/item/stack/medical/splint/ghetto/three(src)
+	new /obj/item/weapon/reagent_containers/syringe/steroid(src)
+	new /obj/item/weapon/storage/pill_bottle/iron(src)

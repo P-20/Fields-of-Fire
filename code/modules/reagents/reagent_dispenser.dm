@@ -200,6 +200,18 @@
 	reagents.remove_reagent(/datum/reagent/fuel,amount)
 	new /obj/effect/decal/cleanable/liquid_fuel(src.loc, amount,1)
 
+/obj/structure/reagent_dispensers/fueltank/wwi
+	icon = 'icons/FoF/misc.dmi'
+	icon_state = "Fuel_canister"
+	flags = CONDUCT
+	flags = null
+	name = "can of diesel"
+	desc = "A can of thick fuel for a variety of things."
+	w_class = ITEM_SIZE_HUGE
+	flags = null
+	density = 0
+	initial_capacity = 100
+
 /obj/structure/reagent_dispensers/peppertank
 	name = "Pepper Spray Refiller"
 	desc = "Refills pepper spray canisters."

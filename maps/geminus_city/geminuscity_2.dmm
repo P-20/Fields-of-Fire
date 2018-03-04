@@ -24,181 +24,199 @@
 "ax" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/mayor_car_park)
 "ay" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/hotel)
 "az" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/city_hall)
-"aA" = (/obj/effect/dummy/spell_jaunt,/turf/unsimulated/wall,/area/planets/Geminus)
-"aB" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/south)
-"aC" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/virology)
-"aD" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/virologyaccess)
-"aE" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/hospital)
-"aF" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/indoor/hospital)
-"aG" = (/turf/unsimulated/wall,/area/planets/Geminus/indoor/hospital)
-"aH" = (/turf/unsimulated/wall,/area/planets/Geminus/outdoor/south)
-"aI" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/morgue)
-"aJ" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/indoor/morgue)
-"aK" = (/turf/unsimulated/wall,/area/planets/Geminus/indoor/morgue)
-"aL" = (/obj/effect/landmark/wakeup/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aM" = (/obj/structure/closet/crate/trench/wood,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aN" = (/obj/structure/closet/crate/trench/wood/med,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aO" = (/obj/structure/closet/crate/trench/wood/med/fresh,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aP" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/cmo)
-"aQ" = (/obj/structure/closet/crate/trench/ammo,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aR" = (/obj/structure/closet/crate/trench/ammo/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aS" = (/obj/structure/closet/crate/trench/ammo/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aT" = (/obj/structure/closet/crate/trench/ammo/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aU" = (/obj/machinery/light/spot{tag = "icon-tube1 (NORTH)"; icon_state = "tube1"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aV" = (/obj/item/weapon/card/id/wwi/brittin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aW" = (/obj/item/weapon/card/id/wwi/frenchtin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aX" = (/obj/item/weapon/card/id/wwi/germantin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aY" = (/obj/effect/landmark/start/wwi/tester/germ,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"aZ" = (/obj/effect/landmark/wakeup/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ba" = (/obj/effect/landmark/start/wwi/tester/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bb" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bc" = (/obj/item/weapon/circular_saw/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bd" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/ham,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"be" = (/obj/item/weapon/reagent_containers/food/snacks/oats,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bf" = (/obj/item/weapon/reagent_containers/food/snacks/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bg" = (/obj/item/weapon/reagent_containers/food/snacks/fish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bh" = (/obj/item/weapon/reagent_containers/food/snacks/ham,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bi" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/oats,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bj" = (/obj/item/trash/bowl,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bk" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bl" = (/obj/item/weapon/storage/box/letter,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bm" = (/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle/scoped,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bn" = (/obj/item/wwi/transit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bo" = (/obj/item/weapon/coin/req,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bp" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bq" = (/obj/item/weapon/card/id/wwi/britbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"br" = (/obj/item/weapon/card/id/wwi/frenchbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bs" = (/obj/item/weapon/card/id/wwi/germanbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bt" = (/obj/item/weapon/gun/projectile/wwi/lever/winchester,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bu" = (/obj/item/weapon/gun/projectile/wwi/mg08,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bv" = (/obj/item/weapon/gun/projectile/shotgun/pump/trenchgun,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bw" = (/obj/item/weapon/gun/projectile/wwi/lewis,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bx" = (/obj/item/weapon/gun/projectile/wwi/chauchat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"by" = (/obj/item/weapon/melee/combat_knife/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bz" = (/obj/item/weapon/gun/projectile/wwi/ruby,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bA" = (/obj/item/weapon/gun/projectile/wwi/mauser,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bB" = (/obj/item/weapon/gun/projectile/wwi/p08,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bC" = (/obj/item/weapon/gun/projectile/revolver/webley,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bD" = (/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bE" = (/obj/item/weapon/gun/projectile/wwi/bolt/lebel,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bF" = (/obj/item/weapon/gun/projectile/wwi/bolt/smle,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bG" = (/obj/item/weapon/card/id/wwi/britgold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bH" = (/obj/item/weapon/card/id/wwi/frenchgold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bI" = (/obj/item/weapon/card/id/wwi/germangold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bJ" = (/obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bK" = (/obj/item/ammo_magazine/box/a792,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bL" = (/obj/item/ammo_box/shotgun/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bM" = (/obj/item/ammo_magazine/box/mp303,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bN" = (/obj/item/ammo_magazine/box/c8mm,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bO" = (/obj/item/weapon/melee/combat_knife/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bP" = (/obj/item/ammo_magazine/c32acp,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bQ" = (/obj/item/ammo_magazine/c9mm,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bR" = (/obj/item/ammo_magazine/c9mml,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bS" = (/obj/item/ammo_magazine/a445,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bT" = (/obj/item/ammo_magazine/g792,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bU" = (/obj/item/ammo_box/lebel,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bV" = (/obj/item/ammo_magazine/smle_strip,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bW" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/outdoor/south)
-"bX" = (/obj/item/ammo_casing/a3030,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bY" = (/obj/item/ammo_magazine/box/a792/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"bZ" = (/obj/item/ammo_casing/shotgun/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ca" = (/obj/item/ammo_magazine/box/mp303/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cb" = (/obj/item/ammo_magazine/box/c8mm/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cc" = (/obj/item/weapon/melee/combat_knife/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cd" = (/obj/item/ammo_magazine/c32acp/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ce" = (/obj/item/ammo_magazine/c9mm/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cf" = (/obj/item/ammo_magazine/c9mml/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cg" = (/obj/item/ammo_magazine/a445/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ch" = (/obj/item/ammo_magazine/g792/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ci" = (/obj/item/ammo_magazine/smle_strip/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cj" = (/obj/effect/landmark/start/wwi/tester,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ck" = (/turf/simulated/wall/wwi/bunker/topleftcorner,/area/planets/Geminus/outdoor/west)
-"cl" = (/turf/simulated/wall/wwi/bunker/horizontal,/area/planets/Geminus/outdoor/west)
-"cm" = (/turf/simulated/wall/wwi/bunker/toprightcorner,/area/planets/Geminus/outdoor/west)
-"cn" = (/obj/item/weapon/mirror,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"co" = (/obj/structure/mirror,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cp" = (/obj/machinery/light/overhead_blue,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cq" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTHWEST)"; icon_state = "sandbag"; dir = 9},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cr" = (/obj/item/device/flashlight/lantern/mining,/obj/structure/sandbag{tag = "icon-sandbag (NORTH)"; icon_state = "sandbag"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cs" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTH)"; icon_state = "sandbag"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ct" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTHEAST)"; icon_state = "sandbag"; dir = 5},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cu" = (/obj/item/weapon/reagent_containers/glass/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cv" = (/obj/item/weapon/reagent_containers/food/drinks/coffee/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cw" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/schnapps,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cx" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/whiskey,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cy" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/wine,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cz" = (/obj/item/clothing/gloves/watch,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cA" = (/obj/item/clothing/accessory/locket/watch,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cB" = (/obj/item/weapon/paper,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cC" = (/obj/item/weapon/storage/belt/trenchmed,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cD" = (/obj/item/stack/medical/bruise_pack/trench/ten,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cE" = (/obj/item/stack/medical/splint/ghetto,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cF" = (/turf/simulated/wall/wwi/bunker/bottomend,/area/planets/Geminus/outdoor/west)
-"cG" = (/obj/structure/sandbag{tag = "icon-sandbag (WEST)"; icon_state = "sandbag"; dir = 8},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cH" = (/obj/structure/sandbag{tag = "icon-sandbag (EAST)"; icon_state = "sandbag"; dir = 4},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cI" = (/obj/structure/target_stake,/obj/item/target/syndicate,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cJ" = (/obj/item/metalscraps,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cK" = (/obj/item/weapon/wrench/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cL" = (/obj/item/weapon/screwdriver/opener,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cM" = (/obj/item/trash/cansoup,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cN" = (/obj/item/weapon/reagent_containers/food/snacks/can/soup,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cO" = (/obj/item/weapon/storage/box/matches/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cP" = (/obj/item/weapon/storage/fancy/cigarettes/fundamentals,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cQ" = (/obj/item/weapon/gun/projectile/wwi/colt1911,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cR" = (/obj/item/stack/material/steel/fifty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cS" = (/obj/item/clothing/head/helmet/frenchofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cT" = (/obj/item/clothing/shoes/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cU" = (/obj/item/device/flashlight/lantern/mining,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cV" = (/obj/item/device/flashlight/lantern/wolf,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cW" = (/obj/structure/target_stake,/obj/item/target,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cX" = (/obj/structure/tanktrap,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cY" = (/obj/item/weapon/wirecutters/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"cZ" = (/obj/item/weapon/crowbar/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"da" = (/obj/item/trash/canbean,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"db" = (/obj/item/weapon/reagent_containers/food/snacks/can/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dc" = (/obj/item/weapon/pickaxe/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dd" = (/obj/item/clothing/under/wwi/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"de" = (/obj/item/ammo_magazine/a45,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"df" = (/obj/item/clothing/head/helmet/frenchsoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dg" = (/obj/item/clothing/shoes/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dh" = (/obj/item/weapon/paper/trench/blank,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"di" = (/obj/item/weapon/pen,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dj" = (/turf/simulated/wall/wwi/bunker/topend,/area/planets/Geminus/outdoor/west)
-"dk" = (/obj/structure/target_stake,/obj/item/target/alien,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dl" = (/obj/structure/bardbedwire,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dm" = (/obj/item/weapon/weldingtool/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dn" = (/obj/item/weapon/screwdriver/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"do" = (/obj/item/trash/canfish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dp" = (/obj/item/weapon/reagent_containers/food/snacks/can/fish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dq" = (/obj/item/weapon/melee/hammer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dr" = (/obj/item/clothing/suit/storage/wwi/germancoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"ds" = (/obj/item/ammo_magazine/a45/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dt" = (/obj/item/clothing/suit/storage/wwi/frenchcoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"du" = (/obj/item/clothing/head/helmet/germanofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dv" = (/obj/item/clothing/shoes/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dw" = (/obj/item/missile/dynamite,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dx" = (/obj/item/missile/dynamite/cluster,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dy" = (/obj/structure/sandbag{tag = "icon-sandbag (SOUTHWEST)"; icon_state = "sandbag"; dir = 10},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dz" = (/obj/item/device/flashlight/lantern/mining,/obj/structure/sandbag,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dA" = (/obj/structure/sandbag,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dB" = (/obj/structure/sandbag{tag = "icon-sandbag (SOUTHEAST)"; icon_state = "sandbag"; dir = 6},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dC" = (/obj/item/clothing/head/helmet/britsoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dD" = (/obj/item/clothing/head/helmet/britofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dE" = (/obj/item/clothing/mask/gas/wwi/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dF" = (/obj/item/clothing/mask/gas/wwi/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dG" = (/obj/item/clothing/mask/gas/wwi/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dH" = (/obj/item/clothing/under/wwi/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dI" = (/obj/item/clothing/under/wwi/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dJ" = (/obj/item/clothing/suit/storage/wwi/britishcoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dK" = (/obj/item/clothing/head/helmet/germansoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dL" = (/obj/item/weapon/flame/candle/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dM" = (/turf/simulated/wall/wwi/bunker/bottomleftcorner,/area/planets/Geminus/outdoor/west)
-"dN" = (/turf/simulated/wall/wwi/bunker/bottomrightcorner,/area/planets/Geminus/outdoor/west)
-"dO" = (/obj/machinery/light/spot,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
-"dP" = (/turf/simulated/wall/wwi/bunker/horizontal,/area/planets/Geminus/outdoor/south)
-"dQ" = (/turf/simulated/wall/wwi/bunker/bottomrightcorner,/area/planets/Geminus/outdoor/south)
-"dR" = (/turf/unsimulated/wall,/area/planets/Geminus/outdoor/west)
-"dS" = (/obj/effect/overmap/sector/geminus_city,/turf/unsimulated/wall,/area/planets/Geminus)
+"aA" = (/turf/simulated/wall/wwi/bunker/topleftcorner,/area/planets/Geminus/outdoor/west)
+"aB" = (/turf/simulated/wall/wwi/bunker/horizontal,/area/planets/Geminus/outdoor/west)
+"aC" = (/turf/simulated/wall/wwi/bunker/intersectiondown,/area/planets/Geminus/outdoor/west)
+"aD" = (/turf/simulated/wall/wwi/bunker/horizontal,/area/planets/Geminus/indoor/hotel)
+"aE" = (/turf/simulated/wall/wwi/bunker/toprightcorner,/area/planets/Geminus/indoor/hotel)
+"aF" = (/obj/effect/dummy/spell_jaunt,/turf/unsimulated/wall,/area/planets/Geminus)
+"aG" = (/obj/machinery/light/spot{tag = "icon-tube1 (NORTH)"; icon_state = "tube1"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"aH" = (/turf/simulated/wall/wwi/bunker/bottomend,/area/planets/Geminus/outdoor/west)
+"aI" = (/obj/machinery/vending/wwi/britstandard,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"aJ" = (/obj/item/weapon/reagent_containers/food/snacks/can/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"aK" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"aL" = (/turf/simulated/wall/wwi/bunker/topend,/area/planets/Geminus/outdoor/west)
+"aM" = (/turf/simulated/wall/wwi/bunker/intersectionright,/area/planets/Geminus/outdoor/west)
+"aN" = (/turf/simulated/wall/wwi/bunker/rightend,/area/planets/Geminus/outdoor/west)
+"aO" = (/turf/simulated/wall/wwi/bunker/leftend,/area/planets/Geminus/outdoor/west)
+"aP" = (/turf/simulated/wall/wwi/bunker/plus,/area/planets/Geminus/outdoor/west)
+"aQ" = (/turf/simulated/wall/wwi/bunker/bottomrightcorner,/area/planets/Geminus/outdoor/west)
+"aR" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/south)
+"aS" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/virology)
+"aT" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/virologyaccess)
+"aU" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/hospital)
+"aV" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/indoor/hospital)
+"aW" = (/turf/unsimulated/wall,/area/planets/Geminus/indoor/hospital)
+"aX" = (/turf/unsimulated/wall,/area/planets/Geminus/outdoor/south)
+"aY" = (/obj/effect/landmark/start/wwi/tester/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"aZ" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ba" = (/obj/effect/landmark/wakeup/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bb" = (/obj/machinery/light/spot,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bc" = (/turf/simulated/wall/wwi/bunker/bottomleftcorner,/area/planets/Geminus/outdoor/west)
+"bd" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/morgue)
+"be" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/indoor/morgue)
+"bf" = (/turf/unsimulated/wall,/area/planets/Geminus/indoor/morgue)
+"bg" = (/obj/structure/closet/crate/trench/wood,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bh" = (/obj/structure/closet/crate/trench/wood/med,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bi" = (/obj/structure/closet/crate/trench/wood/med/fresh,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bj" = (/obj/machinery/vending/wwi/britmedic,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bk" = (/obj/machinery/vending/wwi/frenchmedic,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bl" = (/obj/machinery/vending/wwi/germmedic,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bm" = (/turf/simulated/floor/planet/dirt,/area/planets/Geminus/indoor/cmo)
+"bn" = (/obj/structure/closet/crate/trench/ammo,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bo" = (/obj/structure/closet/crate/trench/ammo/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bp" = (/obj/structure/closet/crate/trench/ammo/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bq" = (/obj/structure/closet/crate/trench/ammo/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"br" = (/obj/machinery/vending/wwi/frenchstandard,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bs" = (/obj/machinery/vending/wwi/germstandard,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bt" = (/obj/item/weapon/card/id/wwi/brittin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bu" = (/obj/item/weapon/card/id/wwi/frenchtin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bv" = (/obj/item/weapon/card/id/wwi/germantin,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bw" = (/obj/effect/landmark/start/wwi/tester/germ,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bx" = (/obj/effect/landmark/wakeup/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"by" = (/obj/item/weapon/circular_saw/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bz" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/ham,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bA" = (/obj/item/weapon/reagent_containers/food/snacks/oats,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bB" = (/obj/item/weapon/reagent_containers/food/snacks/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bC" = (/obj/item/weapon/reagent_containers/food/snacks/fish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bD" = (/obj/item/weapon/reagent_containers/food/snacks/ham,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bE" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/oats,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bF" = (/obj/item/trash/bowl,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bG" = (/obj/item/weapon/reagent_containers/food/snacks/bowl/beans,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bH" = (/obj/item/weapon/storage/box/letter,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bI" = (/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle/scoped,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bJ" = (/obj/item/wwi/transit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bK" = (/obj/item/weapon/coin/req,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bL" = (/obj/item/weapon/card/id/wwi/britbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bM" = (/obj/item/weapon/card/id/wwi/frenchbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bN" = (/obj/item/weapon/card/id/wwi/germanbrass,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bO" = (/obj/item/weapon/gun/projectile/wwi/lever/winchester,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bP" = (/obj/item/weapon/gun/projectile/wwi/mg08,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bQ" = (/obj/item/weapon/gun/projectile/shotgun/pump/trenchgun,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bR" = (/obj/item/weapon/gun/projectile/wwi/lewis,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bS" = (/obj/item/weapon/gun/projectile/wwi/chauchat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bT" = (/obj/item/weapon/melee/combat_knife/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bU" = (/obj/item/weapon/gun/projectile/wwi/ruby,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bV" = (/obj/item/weapon/gun/projectile/wwi/mauser,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bW" = (/obj/item/weapon/gun/projectile/wwi/p08,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bX" = (/obj/item/weapon/gun/projectile/revolver/webley,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bY" = (/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"bZ" = (/obj/item/weapon/gun/projectile/wwi/bolt/lebel,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ca" = (/obj/item/weapon/gun/projectile/wwi/bolt/smle,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cb" = (/obj/item/weapon/card/id/wwi/britgold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cc" = (/obj/item/weapon/card/id/wwi/frenchgold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cd" = (/obj/item/weapon/card/id/wwi/germangold,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ce" = (/obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cf" = (/obj/item/ammo_magazine/box/a792,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cg" = (/obj/item/ammo_box/shotgun/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ch" = (/obj/item/ammo_magazine/box/mp303,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ci" = (/obj/item/ammo_magazine/box/c8mm,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cj" = (/obj/item/weapon/melee/combat_knife/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ck" = (/obj/item/ammo_magazine/c32acp,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cl" = (/obj/item/ammo_magazine/c9mm,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cm" = (/obj/item/ammo_magazine/c9mml,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cn" = (/obj/item/ammo_magazine/a445,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"co" = (/obj/item/ammo_magazine/g792,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cp" = (/obj/item/ammo_box/lebel,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cq" = (/obj/item/ammo_magazine/smle_strip,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cr" = (/turf/simulated/wall/wwi/bunker/vertical,/area/planets/Geminus/outdoor/south)
+"cs" = (/obj/item/ammo_casing/a3030,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ct" = (/obj/item/ammo_magazine/box/a792/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cu" = (/obj/item/ammo_casing/shotgun/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cv" = (/obj/item/ammo_magazine/box/mp303/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cw" = (/obj/item/ammo_magazine/box/c8mm/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cx" = (/obj/item/weapon/melee/combat_knife/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cy" = (/obj/item/ammo_magazine/c32acp/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cz" = (/obj/item/ammo_magazine/c9mm/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cA" = (/obj/item/ammo_magazine/c9mml/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cB" = (/obj/item/ammo_magazine/a445/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cC" = (/obj/item/ammo_magazine/g792/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cD" = (/obj/item/ammo_magazine/smle_strip/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cE" = (/obj/effect/landmark/start/wwi/tester,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cF" = (/turf/simulated/wall/wwi/bunker/toprightcorner,/area/planets/Geminus/outdoor/west)
+"cG" = (/obj/item/weapon/mirror,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cH" = (/obj/structure/mirror,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cI" = (/obj/item/weapon/gun/launcher/crossbow,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cJ" = (/obj/item/weapon/arrow/rod,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cK" = (/obj/item/weapon/arrow,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cL" = (/obj/machinery/light/overhead_blue,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cM" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTHWEST)"; icon_state = "sandbag"; dir = 9},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cN" = (/obj/item/device/flashlight/lantern/mining,/obj/structure/sandbag{tag = "icon-sandbag (NORTH)"; icon_state = "sandbag"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cO" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTH)"; icon_state = "sandbag"; dir = 1},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cP" = (/obj/structure/sandbag{tag = "icon-sandbag (NORTHEAST)"; icon_state = "sandbag"; dir = 5},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cQ" = (/obj/item/weapon/reagent_containers/glass/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cR" = (/obj/item/weapon/reagent_containers/food/drinks/coffee/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cS" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/schnapps,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cT" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/whiskey,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cU" = (/obj/item/weapon/reagent_containers/food/drinks/bottle/trench/wine,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cV" = (/obj/item/clothing/gloves/watch,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cW" = (/obj/item/clothing/accessory/locket/watch,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cX" = (/obj/item/weapon/paper,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cY" = (/obj/item/weapon/storage/belt/trenchmed,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"cZ" = (/obj/item/stack/medical/bruise_pack/trench/ten,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"da" = (/obj/item/stack/medical/splint/ghetto,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"db" = (/obj/item/clothing/accessory/storage/wwi/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dc" = (/obj/structure/sandbag{tag = "icon-sandbag (WEST)"; icon_state = "sandbag"; dir = 8},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dd" = (/obj/structure/sandbag{tag = "icon-sandbag (EAST)"; icon_state = "sandbag"; dir = 4},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"de" = (/obj/structure/target_stake,/obj/item/target/syndicate,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"df" = (/obj/item/metalscraps,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dg" = (/obj/item/weapon/wrench/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dh" = (/obj/item/weapon/screwdriver/opener,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"di" = (/obj/item/trash/cansoup,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dj" = (/obj/item/weapon/reagent_containers/food/snacks/can/soup,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dk" = (/obj/item/weapon/storage/box/matches/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dl" = (/obj/item/weapon/storage/fancy/cigarettes/fundamentals,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dm" = (/obj/item/weapon/gun/projectile/wwi/colt1911,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dn" = (/obj/item/stack/material/steel/fifty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"do" = (/obj/item/clothing/head/helmet/frenchofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dp" = (/obj/item/clothing/shoes/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dq" = (/obj/item/device/flashlight/lantern/mining,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dr" = (/obj/item/device/flashlight/lantern/wolf,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ds" = (/obj/structure/reagent_dispensers/fueltank/wwi,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dt" = (/obj/structure/target_stake,/obj/item/target,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"du" = (/obj/structure/tanktrap,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dv" = (/obj/item/weapon/wirecutters/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dw" = (/obj/item/weapon/crowbar/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dx" = (/obj/item/trash/canbean,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dy" = (/obj/item/weapon/pickaxe/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dz" = (/obj/item/clothing/under/wwi/brit,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dA" = (/obj/item/ammo_magazine/a45,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dB" = (/obj/item/clothing/head/helmet/frenchsoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dC" = (/obj/item/clothing/shoes/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dD" = (/obj/item/weapon/paper/trench/blank,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dE" = (/obj/item/weapon/pen,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dF" = (/obj/structure/target_stake,/obj/item/target/alien,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dG" = (/obj/structure/bardbedwire,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dH" = (/obj/item/weapon/weldingtool/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dI" = (/obj/item/weapon/screwdriver/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dJ" = (/obj/item/trash/canfish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dK" = (/obj/item/weapon/reagent_containers/food/snacks/can/fish,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dL" = (/obj/item/weapon/melee/hammer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dM" = (/obj/item/clothing/suit/storage/wwi/germancoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dN" = (/obj/item/ammo_magazine/a45/empty,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dO" = (/obj/item/clothing/suit/storage/wwi/frenchcoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dP" = (/obj/item/clothing/head/helmet/germanofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dQ" = (/obj/item/clothing/shoes/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dR" = (/obj/item/missile/dynamite,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dS" = (/obj/item/missile/dynamite/cluster,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dT" = (/obj/structure/sandbag{tag = "icon-sandbag (SOUTHWEST)"; icon_state = "sandbag"; dir = 10},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dU" = (/obj/item/device/flashlight/lantern/mining,/obj/structure/sandbag,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dV" = (/obj/structure/sandbag,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dW" = (/obj/structure/sandbag{tag = "icon-sandbag (SOUTHEAST)"; icon_state = "sandbag"; dir = 6},/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dX" = (/obj/item/clothing/head/helmet/britsoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dY" = (/obj/item/clothing/head/helmet/britofficer,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"dZ" = (/obj/item/clothing/mask/gas/wwi/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ea" = (/obj/item/clothing/mask/gas/wwi/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"eb" = (/obj/item/clothing/mask/gas/wwi/british,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ec" = (/obj/item/clothing/under/wwi/french,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ed" = (/obj/item/clothing/under/wwi/german,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ee" = (/obj/item/clothing/suit/storage/wwi/britishcoat,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"ef" = (/obj/item/clothing/head/helmet/germansoft,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"eg" = (/obj/item/weapon/flame/candle/trench,/turf/simulated/floor/planet/dirt,/area/planets/Geminus/outdoor/west)
+"eh" = (/turf/simulated/wall/wwi/bunker/horizontal,/area/planets/Geminus/outdoor/south)
+"ei" = (/turf/simulated/wall/wwi/bunker/bottomrightcorner,/area/planets/Geminus/outdoor/south)
+"ej" = (/turf/unsimulated/wall,/area/planets/Geminus/outdoor/west)
+"ek" = (/obj/effect/overmap/sector/geminus_city,/turf/unsimulated/wall,/area/planets/Geminus)
 
 (1,1,1) = {"
 aaaaababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacadadadadadadadadadadadacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacac
@@ -258,47 +276,47 @@ aaaaaoapapapapapapapapapapapapapapayayayayayayayayayayayayayayayayayayayayayapap
 aaaaaoapapapapapapapapapapapapapapayayayayayayayayayayayayayayayayayayayayayapapapapapapapapapapapazazazazazazazazazazazazazazazazazazazazazazazazauauauauauauauauauauauauauauauauauauauauararararasatat
 aaaaaoapapapapapapapapapapapapapapayayayayayayayayayayayayayayayayayayayayayapapapapapapapapapapapazazazazazazazazazazazazazazazazazazazazazazazazauauauauauauauauauauauauauauauauauauauauararararasatat
 aaaaaoapapapapapapapapapapapapapapayayayayayayayayayayayayayayayayayayayayayapapapapapapapapapapapazazazazazazazazazazazazazazazazazazazazazazazazauauauauauauararararauauauauauarararararararararasatat
-aaaaaoapapapapapapapapapapapapapapayayayayayayayayayayayayayayayayayayayayayapapapapapapapapapapapazazazazazazazazazazazazazazazazazazazazazazazazauauauauauauararararararararararararararararararasatat
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaDaDaDaDaDaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaAaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaDaDaDaDaDaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaDaDaDaDaDaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaDaDaDaDaDaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaDaDaDaDaDaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaFaGaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaIaIaIaIaIaJaKaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaIaIaIaIaIaJaKaH
-aaaaaoapapapapaLaLaLaLaLaLaLaLaLaLaLaLaLaLapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaIaIaIaIaIaJaKaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaIaIaIaIaIaJaKaH
-aaaaaoapapapapaMaNaOapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapapapapaQaRaSaTapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapapapapaUaUaUaUaUaUaUaUaUaUaUaUapapaVaWaXapaYapapapaZapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapbaapbbbcbdbebfbgbhbibjbkblbmbnbobpbqbrbsapaYapapapaZapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapbaapbbbtbubvbwbxbybzbAbBbCbDbEbFbpbGbHbIapaYapapapaZapapapapapapapapapapapapapapapapapapapapaBaCaCaCaCaCaCaCaCaCaCaCaCaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaEaPaPaPaPaPaPaPaPaPaIaIaIaIaIaJaKaH
-aaaaaoapbaapbbbJbKbLbMbNbObPbQbRbSbTbUbVbpapapapapaYapapapaZapapapapapapapapapapapapapapapapapapapapaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbbXbYbZcacbcccdcecfcgchapcibpapcjapapaYapapapaZapapapapckclclclclclclclclclclclclclclcmaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbcncoapapapapapapapcpapapapbpapapapapaYapapapaZapapapapaocqcrcrcscscsctapapapapapapapaoaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbcucvcwcxcyapczcAcBapcCcDcEbpapapapapaYapapapaZapapapapcFcGapapapapapcHapapapapapcIapaoaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbcJcKcLcMcNcOcPcQcRcScTcUcVbpapapapapaYapapapaZapapapapapapapapapapapcHapapapapapcWapaoaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbcXcYcZdadbdcdddecRdfdgdhdibpapapapapaYapapapaZapapapapdjcGapapapapapcHapapapapapdkapaoaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbdldmdndodpdqdrdsdtdudvdwdxbpapapapapaYapapapaZapapapapaodydzdzdAdAdAdBapapapapapapapaoaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapbaapbbapdCdDdEdFdGdHdIdJdKdLapapbpapapapapaYapapapaZapapapapdMclclclclclclclclclclclclclcldNaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapapapapdOdOdOdOdOdOdOdOdOdOdOdOdOapapapapapaYapapapaZapapapapapapapapapapapapapapapapapapapapaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBbWaHaH
-aaaadMclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclclcldPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdPdQaHaH
-aaaadRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRdRaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaHaH
-dSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaoapapapapapapapapaAaBaBaBaCaBaDaDaEayayayayayayayayayayayayayayayayayayapapapapapapapapapapapazazazazazazazazazazazazazazazazazazazazazazazazauauauauauauararararararararararararararararararasatat
+aaaFaoapapapapapapapapaoapaGapaHapapapaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
+aaaFaoapapapapapapapapaoapaIapapapaJaKaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
+aaaFaoapapapapapapapapaoapapapaLapapapaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
+aaaFaoapapapapapapapapaMaNapaOaPaBaBaBaQapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapararararararararararararararararararararararararararararararararararararararararararararararasatat
+aaaFaoapapapapapapapapaoapapapaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaTaTaTaTaTaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaFaoapapapapapapapapaoapaYapaoaZbaapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaTaTaTaTaTaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapaoapbbapaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaTaTaTaTaTaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapbcaBaBaBaQapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaTaTaTaTaTaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaTaTaTaTaTaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaVaWaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbdbdbdbdbdbebfaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbdbdbdbdbdbebfaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbdbdbdbdbdbebfaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbdbdbdbdbdbebfaX
+aaaaaoapapapapbgbhbiapapbjbkblapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapapbnbobpbqapaIbrbsapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapapaGaGaGaGaGaGaGaGaGaGaGaGapapbtbubvapbwapapapbxapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapaZbybzbAbBbCbDbEbFbGbHbIbJbKaKbLbMbNapbwapapapbxapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapaZbObPbQbRbSbTbUbVbWbXbYbZcaaKcbcccdapbwapapapbxapapapapapapapapapapapapapapapapapapapapaRaSaSaSaSaSaSaSaSaSaSaSaSaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUaUbmbmbmbmbmbmbmbmbmbdbdbdbdbdbebfaX
+aaaaaoapapapaZcecfcgchcicjckclcmcncocpcqaKapapapapbwapapapbxapapapapapapapapapapapapapapapapapapapapaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZcsctcucvcwcxcyczcAcBcCapcDaKapcEapapbwapapapbxapapapapaAaBaBaBaBaBaBaBaBaBaBaBaBaBaBcFaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZcGcHcIcJcKapapapapcLapapapaKapapapapbwapapapbxapapapapaocMcNcNcOcOcOcPapapapapapapapaoaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZcQcRcScTcUapcVcWcXapcYcZdaaKdbapapapbwapapapbxapapapapaHdcapapapapapddapapapapapdeapaoaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZdfdgdhdidjdkdldmdndodpdqdraKdsapapapbwapapapbxapapapapapapapapapapapddapapapapapdtapaoaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZdudvdwdxaJdydzdAdndBdCdDdEaKapapapapbwapapapbxapapapapaLdcapapapapapddapapapapapdFapaoaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZdGdHdIdJdKdLdMdNdOdPdQdRdSaKapapapapbwapapapbxapapapapaodTdUdUdVdVdVdWapapapapapapapaoaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapaZapdXdYdZeaebecedeeefegapapaKapapapapbwapapapbxapapapapbcaBaBaBaBaBaBaBaBaBaBaBaBaBaBaQaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapapbbbbbbbbbbbbbbbbbbbbbbbbbbapapapapapbwapapapbxapapapapapapapapapapapapapapapapapapapapaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaaaoapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRaRcraXaX
+aaaabcaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBaBeheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheheiaXaX
+aaaaejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejejaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaXaX
+ekaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 "}
