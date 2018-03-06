@@ -1130,3 +1130,6 @@
 
 /obj/machinery/vending/wwi/germmedic
 	premium = list(/obj/item/weapon/storage/box/wwi/germ/med = 80)
+
+/obj/machinery/vending/wwi/germknight
+	premium = list(/obj/item/weapon/storage/box/wwi/germ/knight = 40, /obj/item/weapon/storage/box/wwi/germ/squire = 80)

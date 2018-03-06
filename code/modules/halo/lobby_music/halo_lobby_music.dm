@@ -12,3 +12,8 @@
 	artist = "Black Sabbath"
 	title = "Fairies Wear Boots"
 	song = 'code/modules/halo/lobby_music/Fairies Wear Boots.ogg'
+
+/lobby_music/heaven_nor_hell
+	artist = "Volbeat"
+	title = "Heaven Nor Hell"
+	song = 'code/modules/halo/lobby_music/Heaven Nor Hell.ogg'

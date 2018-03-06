@@ -287,7 +287,7 @@
 	icon = 'icons/FoF/weaponsnew.dmi'
 	force = 10
 	jam_chance = 5
-	attack_verb = list("beaten","clubbed","muzzle fucked","freedom rocked","stock bumped","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed")
+	attack_verb = list("beaten","clubbed","muzzle fucked","freedom rocked","stock bumped","whacked","smacked","slapped","crushed","crunched","bashed","clobbered","struck","busted","thumped","battered","pounded","pummeled","slammed","stabbed")
 
 /obj/item/weapon/gun/projectile/wwi/mg08
 	name = "\improper MG 08-15"
@@ -304,6 +304,7 @@
 	one_hand_penalty = -1
 	burst = 5
 	firemodes = list(
+		list(mode_name="semi auto",	burst=1, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0),          dispersion = list(1)),
 		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-2,-2,-3,-3),          dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8)),
 		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-2,-2,-3,-3,-4,-4,-5), dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8, 1.8, 2.0, 2.0)),
 		)
@@ -313,6 +314,7 @@
 		)
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 50
+	slowdown_general = 1
 
 /obj/item/weapon/gun/projectile/wwi/mg08/update_icon()
 	..()
@@ -324,7 +326,7 @@
 
 /obj/item/weapon/gun/projectile/wwi/lewis
 	name = "\improper Lewis gun"
-	desc = "An offshoot of the British machine gun, known by its distinctive barrel cooling shroud and top mounted 47-round pan magazine. Uses .303 British ammo."
+	desc = "An offshoot of the British Vickers machine gun, known by its distinctive barrel cooling shroud and top mounted 47-round pan magazine. Uses .303 British ammo."
 	icon_state = "lewis"
 	item_state = "mg08_w"
 	caliber = "a303"
@@ -336,6 +338,7 @@
 	burst = 5
 	load_method = MAGAZINE
 	firemodes = list(
+		list(mode_name="semi auto",	burst=1, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0),          dispersion = list(1)),
 		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-2,-2,-3,-3),          dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8)),
 		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-2,-2,-3,-3,-4,-4,-5), dispersion = list(1.3, 1.3, 1.6, 1.6, 1.8, 1.8, 2.0, 2.0)),
 		)
@@ -345,6 +348,7 @@
 		)
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 47
+	slowdown_general = 1
 
 /obj/item/weapon/gun/projectile/wwi/lewis/update_icon()
 	..()
@@ -369,6 +373,7 @@
 	load_method = MAGAZINE
 	jam_chance = 10
 	firemodes = list(
+		list(mode_name="semi auto",	burst=1, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0),          dispersion = list(1)),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-1,-1),       dispersion=list(1.0, 1.4, 1.4)),
 		list(mode_name="short bursts", 	burst=5, fire_delay=null, move_delay=6,    burst_accuracy=list(-2,-2,-3,-3,-4), dispersion=list(1.0, 1.4, 1.4, 1.6, 1.6)),
 		)
@@ -378,6 +383,7 @@
 		)
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 20
+
 /obj/item/weapon/gun/projectile/wwi/chauchat/update_icon()
 	..()
 	if(ammo_magazine)

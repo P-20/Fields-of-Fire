@@ -454,7 +454,7 @@
 
 /obj/item/clothing/suit/storage/wwi
 	icon = 'icons/FoF/clothes.dmi'
-	allowed = list(/obj/item/ammo_box, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
+	allowed = list(/obj/item/ammo_box, /obj/item/ammo_magazine, /obj/item/weapon/gun/projectile/wwi/colt1911, /obj/item/weapon/gun/projectile/wwi/lever/winchester/sawn, /obj/item/weapon/gun/projectile/wwi/p08, /obj/item/weapon/gun/projectile/wwi/mauser, /obj/item/weapon/gun/projectile/wwi/ruby)
 
 /obj/item/clothing/suit/storage/wwi/germancoat
 	icon_override = MOB_OVERRIDE
@@ -696,14 +696,16 @@
 	icon_override = MOB_OVERRIDE
 	icon = WWI_OVERRIDE
 	name = "German plate armor"
-	desc = "A bulky suit of well worn armor given to frontline troops."
+	desc = "A bulky suit of well worn diesel powered armor given to frontline troops. It has a special mechanism for latching onto the MG08."
 	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor = list(melee = 25, bullet = 30, laser = 0, energy = 0, bomb = 10, bio = 5, rad = 0)
+	armor = list(melee = 25, bullet = 35, laser = 0, energy = 0, bomb = 10, bio = 5, rad = 0)
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	icon_state = "Armor"
 	item_state = "Armor"
+	slowdown_general = 2
+	allowed = list(/obj/item/ammo_magazine, /obj/item/weapon/gun/projectile/wwi/mg08)
 
 /obj/item/clothing/shoes/germanarmor
 	name = "German plate boots"
@@ -719,6 +721,8 @@
 	body_parts_covered = FEET
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+
+
 
 /obj/item/clothing/head/helmet/germanarmor
 	name = "German plate helmet"

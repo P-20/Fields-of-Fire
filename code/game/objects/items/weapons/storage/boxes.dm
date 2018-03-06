@@ -507,8 +507,8 @@
 					/obj/item/clothing/suit/storage/wwi/frenchcoat,
 					/obj/item/ammo_box/lebel, /obj/item/ammo_box/lebel,
 					/obj/item/clothing/mask/gas/wwi/french,
+					/obj/item/weapon/melee/combat_knife/french,
 					/obj/item/clothing/head/helmet/frenchsoft)
-	max_storage_space = 6
 
 /obj/item/weapon/storage/box/wwi/brit/smle
 	name = "Lee-Enfield box"
@@ -517,6 +517,7 @@
 					/obj/item/clothing/suit/storage/wwi/britishcoat,
 					/obj/item/ammo_magazine/smle_strip, /obj/item/ammo_magazine/smle_strip,
 					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/weapon/melee/combat_knife/british,
 					/obj/item/clothing/head/helmet/britsoft)
 
 /obj/item/weapon/storage/box/wwi/germ/g98
@@ -526,6 +527,7 @@
 					/obj/item/clothing/suit/storage/wwi/germancoat,
 					/obj/item/ammo_magazine/g792,/obj/item/ammo_magazine/g792,
 					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/weapon/melee/combat_knife/german,
 					/obj/item/clothing/head/helmet/germansoft)
 
 /obj/item/weapon/storage/box/wwi/brit/britmed
@@ -535,6 +537,7 @@
 					/obj/item/clothing/suit/storage/wwi/britmedcoat,
 					/obj/item/ammo_magazine/smle_strip, /obj/item/ammo_magazine/smle_strip,
 					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/weapon/melee/combat_knife/british,
 					/obj/item/clothing/head/helmet/britsoft)
 
 /obj/item/weapon/storage/box/wwi/brit/frenchmed
@@ -544,6 +547,7 @@
 					/obj/item/clothing/suit/storage/wwi/frenchmedcoat,
 					/obj/item/ammo_box/lebel, /obj/item/ammo_box/lebel,
 					/obj/item/clothing/mask/gas/wwi/french,
+					/obj/item/weapon/melee/combat_knife/french,
 					/obj/item/clothing/head/helmet/frenchsoft)
 
 /obj/item/weapon/storage/box/wwi/germ/med
@@ -553,4 +557,23 @@
 					/obj/item/clothing/suit/storage/wwi/germanmedcoat,
 					/obj/item/ammo_magazine/g792,/obj/item/ammo_magazine/g792,
 					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/weapon/melee/combat_knife/german,
+					/obj/item/clothing/head/helmet/germansoft)
+
+/obj/item/weapon/storage/box/wwi/germ/knight
+	name = "Knight box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/mg08,
+					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/ammo_magazine/box/a792,/obj/item/ammo_magazine/box/a792,
+					/obj/item/weapon/melee/combat_knife/german)
+
+/obj/item/weapon/storage/box/wwi/germ/squire
+	name = "AMG box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/g98rifle,
+					/obj/item/clothing/accessory/storage/wwi/germ,
+					/obj/item/clothing/suit/storage/wwi/germancoat,
+					/obj/item/ammo_magazine/g792,
+					/obj/item/ammo_magazine/box/a792, /obj/item/ammo_magazine/box/a792,
+					/obj/item/clothing/mask/gas/wwi/german,
+					/obj/item/weapon/melee/combat_knife/german,
 					/obj/item/clothing/head/helmet/germansoft)
