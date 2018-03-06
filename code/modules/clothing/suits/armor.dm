@@ -692,5 +692,61 @@
 	item_state = "medbrittsuit"
 	blood_overlay_type = "coat"
 
+/obj/item/clothing/suit/storage/wwi/germanarmor
+	icon_override = MOB_OVERRIDE
+	icon = WWI_OVERRIDE
+	name = "German plate armor"
+	desc = "A bulky suit of well worn armor given to frontline troops."
+	w_class = ITEM_SIZE_HUGE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 25, bullet = 30, laser = 0, energy = 0, bomb = 10, bio = 5, rad = 0)
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	icon_state = "Armor"
+	item_state = "Armor"
+
+/obj/item/clothing/shoes/germanarmor
+	name = "German plate boots"
+	desc = "These plated boots have seen many owners."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "Sabatons"
+	icon_state = "Sabatons"
+	force = 5
+	armor = list(melee = 20, bullet = 10, laser = 0, energy = 0, bomb = 10, bio = 5, rad = 0)
+	item_flags = NOSLIP
+	siemens_coefficient = 0.6
+	body_parts_covered = FEET
+	cold_protection = FEET
+	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/germanarmor
+	name = "German plate helmet"
+	desc = "A plated full helmet."
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	item_state = "Helm"
+	icon_state = "Helm"
+	body_parts_covered = HEAD|FACE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 20, bullet = 20, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0)
+
+/obj/item/clothing/gloves/thick/germanarmor
+	desc = "Heavy insulated plate gloves."
+	name = "German plate gloves"
+	icon = WWI_OVERRIDE
+	icon_override = MOB_OVERRIDE
+	icon_state = "Guantlets"
+	item_state = "Guantlets"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	force = 5
+	armor = list(melee = 20, bullet = 10, laser = 0, energy = 0, bomb = 10, bio = 0, rad = 0)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+
+
 #undef WWI_OVERRIDE
 #undef MOB_OVERRIDE

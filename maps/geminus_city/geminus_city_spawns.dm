@@ -29,7 +29,7 @@ GLOBAL_LIST_EMPTY(colony_spawns)
 	name = "British Tester"
 
 /obj/effect/landmark/start/wwi/tester/germ
-	name = "German Tester"
+	name = "German Knight Tester"
 
 //UNSC Landmarks + datums//
 

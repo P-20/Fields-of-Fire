@@ -1,33 +1,4 @@
-
-/decl/hierarchy/outfit/job/marine
-	name = "Marine"
-
-	uniform = /obj/item/clothing/under/unsc/marine_fatigues
-	suit = /obj/item/clothing/suit/storage/marine
-	head = /obj/item/clothing/head/helmet/marine
-	shoes = /obj/item/clothing/shoes/marine
-	belt = /obj/item/weapon/storage/belt/marine_ammo
-	l_pocket = /obj/item/device/encryptionkey/shipcom
-	flags = 0
-
-/decl/hierarchy/outfit/job/marine/leader
-	name = "Marine - Squad Leader"
-
-	head = /obj/item/clothing/head/helmet/marine/visor
-
-	flags = 0
-
-/decl/hierarchy/outfit/job/colonist
-	name = "Colonist"
-
-	head = null
-	uniform = null
-	belt = null
-	shoes = /obj/item/clothing/shoes/brown
-	pda_slot = slot_r_store
-
-	flags = 0
-
+/*
 /decl/hierarchy/outfit/job/colonist/equip_id(mob/living/carbon/human/H)
 	var/obj/item/weapon/card/id/C = ..()
 	C.assignment = "Colonist"
@@ -52,33 +23,7 @@
 	equip_special(H)
 
 	. = ..()
-
-/decl/hierarchy/outfit/job/colonist/innie_sympathiser
-	name = "Insurrectionist Sympathiser"
-
-	mask = /obj/item/clothing/mask/innie/shemagh
-
-	l_pocket = /obj/item/ammo_magazine/m127_saphp
-	l_ear = /obj/item/device/radio/headset/insurrection
-
-/decl/hierarchy/outfit/job/colonist/innie_sympathiser/equip_special()
-	return
-
-/decl/hierarchy/outfit/job/colonist/innie_sympathiser/equip_base(mob/living/carbon/human/H)
-	. = ..()
-
-	var/obj/item/weapon/gun/projectile/G = new /obj/item/weapon/gun/projectile/m6d_magnum
-	G.ammo_magazine = new /obj/item/ammo_magazine/m127_saphp
-	H.equip_to_slot_or_del(G,slot_belt)
-
-/decl/hierarchy/outfit/job/mayor
-	name = "Mayor"
-
-	uniform = /obj/item/clothing/under/blazer
-	belt = /obj/item/weapon/gun/projectile/m6d_magnum
-	shoes = /obj/item/clothing/shoes/black
-
-	flags = 0
+*/
 
 /decl/hierarchy/outfit/job/tester/brit
 	name = "British Tester"
@@ -113,19 +58,21 @@
 	H.set_id_info(C)
 
 /decl/hierarchy/outfit/job/tester/germ
-	name = "German Tester"
+	name = "German Knight Tester"
 
 	uniform = /obj/item/clothing/under/wwi/german
-	shoes = /obj/item/clothing/shoes/german
-	belt = /obj/item/weapon/gun/projectile/wwi/p08
-	suit = /obj/item/clothing/suit/storage/wwi/germancoat
+	shoes = /obj/item/clothing/shoes/germanarmor
+	suit = /obj/item/clothing/suit/storage/wwi/germanarmor
 	id_type = /obj/item/weapon/card/id/wwi/germantin
 	l_pocket = /obj/item/weapon/storage/box/letter/german
 	l_ear = null
+	belt = null
+	head = /obj/item/clothing/head/helmet/germanarmor
+	gloves = /obj/item/clothing/gloves/thick/germanarmor
 
 	flags = 0
 
 /decl/hierarchy/outfit/job/tester/germ/equip_id(mob/living/carbon/human/H)
 	var/obj/item/weapon/card/id/wwi/germantin/C = ..()
-	C.assignment = "German Tester"
+	C.assignment = "German Knight Tester"
 	H.set_id_info(C)
