@@ -94,3 +94,24 @@
 	var/obj/item/weapon/card/id/wwi/frenchtin/C = ..()
 	C.assignment = "French Soldier"
 	H.set_id_info(C)
+
+/decl/hierarchy/outfit/job/britknight
+	name = "British Knight"
+
+	uniform = /obj/item/clothing/under/wwi/brit
+	shoes = /obj/item/clothing/shoes/britarmor
+	suit = /obj/item/clothing/suit/storage/wwi/britarmor
+	id_type = /obj/item/weapon/card/id/wwi/britbrass
+	l_pocket = /obj/item/weapon/storage/box/letter/brit
+	l_ear = null
+	belt = null
+	head = /obj/item/clothing/head/helmet/britarmor
+	gloves = /obj/item/clothing/gloves/thick/britarmor
+	pda_slot = null
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/germknight/equip_id(mob/living/carbon/human/H)
+	var/obj/item/weapon/card/id/wwi/britbrass/C = ..()
+	C.assignment = "British Knight"
+	H.set_id_info(C)

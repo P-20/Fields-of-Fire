@@ -577,3 +577,21 @@
 					/obj/item/clothing/mask/gas/wwi/german,
 					/obj/item/weapon/melee/combat_knife/german,
 					/obj/item/clothing/head/helmet/germansoft)
+
+/obj/item/weapon/storage/box/wwi/brit/knight
+	name = "Knight box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/lewis,
+					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/ammo_magazine/box/mp303,/obj/item/ammo_magazine/box/mp303,
+					/obj/item/weapon/melee/combat_knife/british)
+
+/obj/item/weapon/storage/box/wwi/brit/squire
+	name = "AMG box"
+	startswith = list(/obj/item/weapon/gun/projectile/wwi/bolt/smle,
+					/obj/item/clothing/accessory/storage/wwi/brit,
+					/obj/item/clothing/suit/storage/wwi/britishcoat,
+					/obj/item/ammo_magazine/smle_strip,
+					/obj/item/ammo_magazine/box/mp303,/obj/item/ammo_magazine/box/mp303,
+					/obj/item/clothing/mask/gas/wwi/british,
+					/obj/item/weapon/melee/combat_knife/british,
+					/obj/item/clothing/head/helmet/britsoft)

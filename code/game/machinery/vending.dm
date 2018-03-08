@@ -1133,3 +1133,6 @@
 
 /obj/machinery/vending/wwi/germknight
 	premium = list(/obj/item/weapon/storage/box/wwi/germ/knight = 40, /obj/item/weapon/storage/box/wwi/germ/squire = 80)
+
+/obj/machinery/vending/wwi/britknight
+	premium = list(/obj/item/weapon/storage/box/wwi/brit/knight = 40, /obj/item/weapon/storage/box/wwi/brit/squire = 80)
